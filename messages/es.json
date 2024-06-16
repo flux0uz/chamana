@@ -1,0 +1,40 @@
+{
+  "Metadata": {
+    "title": "Chamana Ibiza | Inicio",
+    "description": ""
+  },
+  "ErrorCard": {
+    "title": "Algo salió mal",
+    "text": "Se ha producido un error",
+    "cta": "Volver a intentar"
+  },
+  "Header": {
+    "menu": {
+      "home": "Inicio",
+      "about": "Sobre Chamana",
+      "book": "Reserva una mesa",
+      "menus": {
+        "title": "Cartas",
+        "menu": "Carta",
+        "cocktails": "Cocktails",
+        "wine": "Vinos"
+      }
+    }
+  },
+  "BookModal": {
+    "title": "Reserva una mesa"
+  },
+  "Footer": {
+    "address": "Dirección",
+    "call": "Llamada",
+    "email": "Email",
+    "reserve": {
+      "title": "Reserva",
+      "text": "Reserva una mesa"
+    },
+    "follow": "Síguenos"
+  },
+  "Home": {
+    "title": ""
+  }
+}

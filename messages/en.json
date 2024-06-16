@@ -1,0 +1,40 @@
+{
+  "Metadata": {
+    "title": "Chamana Ibiza | Home",
+    "description": ""
+  },
+  "ErrorCard": {
+    "title": "Something went wrong",
+    "text": "An error occurred",
+    "cta": "Try again"
+  },
+  "Header": {
+    "menu": {
+      "home": "Home",
+      "about": "About",
+      "book": "Book a table",
+      "menus": {
+        "title": "Menus",
+        "menu": "Menu",
+        "cocktails": "Cocktails",
+        "wine": "Wine"
+      }
+    }
+  },
+  "BookModal": {
+    "title": "Book a table"
+  },
+  "Footer": {
+    "address": "Address",
+    "call": "Call",
+    "email": "Email",
+    "reserve": {
+      "title": "Reserve",
+      "text": "Reserve a table"
+    },
+    "follow": "Follow us"
+  },
+  "Home": {
+    "title": ""
+  }
+}
