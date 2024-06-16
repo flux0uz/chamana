@@ -1,7 +1,11 @@
 {
   "Metadata": {
     "title": "Chamana Ibiza | Inicio",
-    "description": ""
+    "description": "",
+    "about": {
+      "title": "Sobre Chamana",
+      "description": ""
+    }
   },
   "ErrorCard": {
     "title": "Algo salió mal",

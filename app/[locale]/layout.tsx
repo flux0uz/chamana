@@ -4,14 +4,15 @@ import Script from "next/script";
 import type { Metadata } from "next";
 import { getMessages, getTranslations } from "next-intl/server";
 import { NextIntlClientProvider } from "next-intl";
+import { Organization, WithContext } from "schema-dts";
 
 import { siteConfig } from "@/config/site";
 import { fontGrostesk, fontObra } from "@/lib/font";
+import { absoluteUrl } from "@/lib/utils";
 
 import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
-import { Organization, WithContext } from "schema-dts";
-import { absoluteUrl } from "@/lib/utils";
+import { MobileHeader } from "@/components/layout/mobile-header";
 
 export async function generateMetadata({
   params: { locale },
@@ -109,6 +110,7 @@ export default async function LocaleLayout({
           <NextIntlClientProvider messages={messages}>
             <div className="relative flex min-h-screen flex-col">
               <Header />
+              <MobileHeader />
               <main className="flex-1">
                 <div className="border-b">{children}</div>
               </main>

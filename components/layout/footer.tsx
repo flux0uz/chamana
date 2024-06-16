@@ -43,11 +43,11 @@ export function Footer() {
                 <div className="flex items-center gap-1">
                   <Mail className="stroke-primary" />
                   <a
-                    href="mailto:contact@chamana.com"
+                    href="mailto:contact@chamanaibiza.com"
                     target="_blank"
                     rel="noreferrer"
                   >
-                    contact@chamana.com //TODO: update
+                    contact@chamanaibiza.com
                   </a>
                 </div>
               </div>

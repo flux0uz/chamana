@@ -14,9 +14,9 @@ export function Header() {
   const t = useTranslations("Header");
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+    <header className="sticky top-0 z-50 hidden w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 md:block">
       <div className="container flex h-20 max-w-screen-2xl items-center">
-        <div className="mr-4 hidden md:flex">
+        <div className="mr-4 flex">
           <Link href="/about" className="mr-14 flex items-center space-x-2">
             <Image
               src={logo}
