@@ -9,6 +9,7 @@ import logo from "@/public/images/logo-chamana.png";
 import { HeaderLinks } from "@/components/layout/header-links";
 import { BookModal } from "@/components/layout/book-modal";
 import { Button } from "@/components/ui/button";
+import { LocaleSwitcher } from "../locale-switcher";
 
 export function Header() {
   const t = useTranslations("Header");
@@ -28,7 +29,7 @@ export function Header() {
           </Link>
           <HeaderLinks />
         </div>
-        <div className="flex flex-1 items-center justify-between space-x-2 md:justify-end">
+        <div className="flex flex-1 items-center justify-between space-x-8 md:justify-end">
           <BookModal
             trigger={
               <Button className="text-lg font-semibold uppercase">
@@ -36,6 +37,7 @@ export function Header() {
               </Button>
             }
           />
+          <LocaleSwitcher />
         </div>
       </div>
     </header>

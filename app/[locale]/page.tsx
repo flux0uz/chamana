@@ -1,8 +1,11 @@
 import Image from "next/image";
 
 import placeHolderAbout from "@/public/images/placeholder-about.jpg";
+import { useTranslations } from "next-intl";
 
 export default function Home() {
+  const t = useTranslations("Home");
+
   return (
     <div className="min-h-dvh flex-1">
       <header className="relative h-[calc(100dvh-80px)]">
@@ -18,21 +21,13 @@ export default function Home() {
           <div className="w-full space-y-2 lg:w-1/2">
             <div>
               <span className="text-lg font-semibold uppercase text-muted">
-                About
+                {t("about.subTitle")}
               </span>
-              <h2 className="text-3xl md:text-4xl">Welcome to Chamana</h2>
+              <h2 className="text-balance text-3xl md:text-4xl">
+                {t("about.title")}
+              </h2>
             </div>
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus
-              autem veritatis accusamus exercitationem minus quae voluptatibus
-              repudiandae consequuntur veniam vel eos voluptate culpa illo
-              blanditiis, eius nostrum perferendis ipsam earum similique in
-              quis, dolorum obcaecati iusto! Inventore, sit? Quae dignissimos
-              facere amet harum labore nulla error architecto dolorum illum
-              optio. Esse, consequuntur aliquam! Cum, voluptatibus? Explicabo
-              provident, sequi tenetur, error quidem doloribus enim quis ipsam
-              sed libero soluta atque nostrum voluptatem, vitae veniam.
-            </p>
+            <p>{t("about.text")}</p>
           </div>
           <Image
             src={placeHolderAbout}

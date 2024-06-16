@@ -19,7 +19,7 @@
       "book": "Reserva una mesa",
       "menus": {
         "title": "Cartas",
-        "menu": "Carta",
+        "menu": "Tapas",
         "cocktails": "Cocktails",
         "wine": "Vinos"
       }
@@ -39,6 +39,11 @@
     "follow": "Síguenos"
   },
   "Home": {
-    "title": ""
+    "title": "",
+    "about": {
+      "subTitle": "Sobre Chamana",
+      "title": "Bienvenido a Chamana, donde Argentina se encuentra con Ibiza.",
+      "text": "Chamana combina el encanto rústico de Argentina con el misticismo de Ibiza. Creado por dos hermanas argentinas, nuestro restaurante y boutique celebran las tradiciones chamánicas y el arte indígena. Disfruta de tapas elaboradas con carne argentina de primera calidad, cócteles de hierbas con ingredientes locales y sagrados, y descubre ropa artesanal en 'La Botica', con piezas de edición limitada y accesorios hechos a mano."
+    }
   }
 }

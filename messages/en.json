@@ -19,7 +19,7 @@
       "book": "Book a table",
       "menus": {
         "title": "Menus",
-        "menu": "Menu",
+        "menu": "Tapas",
         "cocktails": "Cocktails",
         "wine": "Wine"
       }
@@ -39,6 +39,11 @@
     "follow": "Follow us"
   },
   "Home": {
-    "title": ""
+    "title": "",
+    "about": {
+      "subTitle": "About",
+      "title": "Welcome to Chamana, where Argentina meets Ibiza.",
+      "text": "Chamana blends the rustic charm of Argentina with Ibiza's mystical allure. Created by two Argentine sisters, our restaurant and boutique celebrate shamanic traditions and indigenous artistry. Enjoy tapas made with premium Argentine beef, herbal cocktails crafted with local and sacred herbs, and discover artisanal clothing at 'La Botica', featuring limited edition pieces and handmade accessories."
+    }
   }
 }

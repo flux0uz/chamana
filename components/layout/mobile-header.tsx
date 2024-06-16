@@ -18,6 +18,7 @@ import { Separator } from "@/components/ui/separator";
 import { BookModal } from "@/components/layout/book-modal";
 
 import logo from "@/public/images/logo-chamana.png";
+import { LocaleSwitcher } from "../locale-switcher";
 
 export function MobileHeader() {
   const t = useTranslations("Header");
@@ -26,10 +27,10 @@ export function MobileHeader() {
   const [open, setOpen] = React.useState(false);
 
   return (
-    <header className="z-50w-full sticky top-0 border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 md:hidden">
+    <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 md:hidden">
       <div className="flex h-20 w-full items-center justify-between px-4">
         <div className="mr-4 flex">
-          <Link href="/about" className="mr-14 flex items-center space-x-2">
+          <Link href="/" className="mr-14 flex items-center space-x-2">
             <Image
               src={logo}
               priority
@@ -78,18 +79,21 @@ export function MobileHeader() {
             </Button>
           </SheetTrigger>
           <SheetContent className="w-[90%] pr-0">
-            <MobileLink
-              href="/"
-              className="flex items-center"
-              onOpenChange={setOpen}
-            >
-              <Image
-                src={logo}
-                priority
-                alt="Chamana Ibiza logo"
-                className="h-auto w-44"
-              />
-            </MobileLink>
+            <div className="flex w-full items-center justify-between">
+              <MobileLink
+                href="/"
+                className="flex items-center"
+                onOpenChange={setOpen}
+              >
+                <Image
+                  src={logo}
+                  priority
+                  alt="Chamana Ibiza logo"
+                  className="h-auto w-44"
+                />
+              </MobileLink>
+              <LocaleSwitcher />
+            </div>
 
             <div className="my-12 flex flex-col space-y-3">
               {siteConfig.navLinks?.map(
