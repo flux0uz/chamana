@@ -42,7 +42,7 @@ export async function generateMetadata({
     openGraph: {
       type: "website",
       locale: locale,
-      url: "/es",
+      url: `/${locale}`,
       title: `${siteConfig.name} | ${t("title")}`,
       description: t("description"),
       siteName: siteConfig.name,
@@ -55,7 +55,7 @@ export async function generateMetadata({
       ...siteConfig.openGraphImage,
     },
     alternates: {
-      canonical: `/es`,
+      canonical: `/${locale}`,
       languages: {
         "x-default": "/es",
         es: "/es",

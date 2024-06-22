@@ -1,29 +1,24 @@
 import { MetadataRoute } from "next";
+import { defaultLocale, locales } from "@/navigation";
 import { env } from "@/env.mjs";
 
-const CLIENT_BASE_URL = env.NEXT_PUBLIC_APP_URL;
+const host = env.NEXT_PUBLIC_APP_URL;
+const pathnames = ["/", "/about"];
 
-const pages: MetadataRoute.Sitemap = [
-  {
-    url: "/",
-    priority: 1,
-    changeFrequency: "weekly",
-  },
-];
+function getUrl(pathname: string, locale: string) {
+  return `${host}/${locale}${pathname === "/" ? "" : pathname}`;
+}
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const routes = pages.map((page) => ({
-    url: `${CLIENT_BASE_URL}${page.url}`,
+  return pathnames.map((path, i) => ({
+    url: getUrl(path, defaultLocale),
     lastModified: new Date().toISOString(),
-    changeFrequency: page.changeFrequency,
-    priority: page.priority,
+    changeFrequency: "weekly",
+    priority: i === 0 ? 1 : 0.8,
     alternates: {
-      languages: {
-        es: `${CLIENT_BASE_URL}/es${page.url}`,
-        en: `${CLIENT_BASE_URL}/en${page.url}`,
-      },
+      languages: Object.fromEntries(
+        locales.map((locale) => [locale, getUrl(path, locale)]),
+      ),
     },
-  })) as MetadataRoute.Sitemap;
-
-  return routes;
+  }));
 }

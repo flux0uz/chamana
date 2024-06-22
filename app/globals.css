@@ -52,6 +52,6 @@
   h4,
   h5,
   h6 {
-    @apply font-header tracking-widest;
+    @apply font-header tracking-wider;
   }
 }

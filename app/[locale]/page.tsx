@@ -1,7 +1,7 @@
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 import placeHolderAbout from "@/public/images/placeholder-about.jpg";
-import { useTranslations } from "next-intl";
 
 export default function Home() {
   const t = useTranslations("Home");
@@ -31,10 +31,9 @@ export default function Home() {
           </div>
           <Image
             src={placeHolderAbout}
-            objectFit="cover"
             quality={100}
             alt="Placeholder about"
-            className="rounded-sm"
+            className="rounded-sm object-cover"
           />
         </div>
       </section>

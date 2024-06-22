@@ -35,7 +35,7 @@ export function Menus() {
                 className="w-fit cursor-pointer border-b-2 border-transparent font-medium hover:border-primary"
               />
               <ListItem
-                href={`/menus/chamana-cocktails-${locale}.pdf`} //TODO: add file
+                href={`/menus/chamana-cocktails-${locale}.pdf`}
                 target="_blank"
                 rel="noreferrer"
                 title={t("menus.cocktails")}
