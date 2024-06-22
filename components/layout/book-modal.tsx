@@ -1,6 +1,7 @@
 "use client";
 
 import * as React from "react";
+import { useLocale, useTranslations } from "next-intl";
 
 import { cn } from "@/lib/utils";
 import { useMediaQuery } from "@/hooks/use-media-query";
@@ -19,7 +20,6 @@ import {
   DrawerTitle,
   DrawerTrigger,
 } from "@/components/ui/drawer";
-import { useTranslations } from "next-intl";
 
 export function BookModal({ trigger }: { trigger: React.ReactNode }) {
   const t = useTranslations("BookModal");
@@ -55,11 +55,13 @@ export function BookModal({ trigger }: { trigger: React.ReactNode }) {
 }
 
 function ForkWidget({ className }: React.ComponentProps<"div">) {
+  const locale = useLocale();
+
   return (
     <div className={cn("", className)}>
       <iframe
         title="TheFork booking widget"
-        src="https://widget.thefork.com/f6da9069-3b78-427f-8e33-0206d2c25f88"
+        src={`https://widget.thefork.com/${locale}/f6da9069-3b78-427f-8e33-0206d2c25f88`}
         allow="payment *"
         style={{
           width: "100%",
