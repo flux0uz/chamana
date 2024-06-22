@@ -51,7 +51,7 @@ export function MobileHeader() {
                 viewBox="0 0 24 24"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-9 w-9"
+                className="h-8 w-8"
               >
                 <path
                   d="M3 5H11"
@@ -157,22 +157,22 @@ export function MobileHeader() {
                 <Phone className="stroke-primary" />
                 <a
                   className="text-lg"
-                  href="tel:+34628222222"
+                  href="tel:+34662318408"
                   target="_blank"
                   rel="noreferrer"
                 >
-                  +34 628 222 222 //TODO: update
+                  +34 662 31 84 08
                 </a>
               </div>
               <div className="flex items-center gap-2">
                 <Mail className="stroke-primary" />
                 <a
                   className="text-lg"
-                  href="mailto:contact@chamanaibiza.com"
+                  href="mailto:reservations@chamanaibiza.com"
                   target="_blank"
                   rel="noreferrer"
                 >
-                  contact@chamanaibiza.com
+                  reservations@chamanaibiza.com
                 </a>
               </div>
             </div>
