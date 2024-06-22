@@ -20,9 +20,10 @@ export function HeaderLinks() {
           key={link.href}
           href={link.href}
           className={clsx(
-            "border-b-2 border-transparent text-lg font-semibold uppercase text-foreground/60 transition-colors hover:border-primary hover:text-foreground/80",
+            "border-b-2 text-lg font-semibold uppercase text-foreground/60 transition-colors hover:border-primary hover:text-foreground/80",
             {
               "border-primary": pathname === link.href,
+              "border-transparent": pathname !== link.href,
             },
           )}
         >

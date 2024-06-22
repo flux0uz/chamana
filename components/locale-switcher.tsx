@@ -14,8 +14,9 @@ export function LocaleSwitcher() {
       {locales.map((loc, i) => (
         <React.Fragment key={loc}>
           <Link
-            className={clsx("text-lg font-semibold uppercase text-muted", {
+            className={clsx("text-lg uppercase", {
               "font-bold text-primary": loc === locale,
+              "font-semibold text-muted hover:text-primary": loc !== locale,
             })}
             href={pathname}
             locale={loc}

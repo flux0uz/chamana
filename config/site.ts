@@ -1,4 +1,3 @@
-import { Facebook } from "@/components/icons/facebook";
 import { Instagram } from "@/components/icons/instagram";
 import { env } from "@/env.mjs";
 import { Metadata } from "next";

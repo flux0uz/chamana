@@ -27,7 +27,7 @@ export default function Home() {
                 {t("about.title")}
               </h2>
             </div>
-            <p>{t("about.text")}</p>
+            <p className="text-lg">{t("about.text")}</p>
           </div>
           <Image
             src={placeHolderAbout}
