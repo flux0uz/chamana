@@ -156,23 +156,23 @@ export function MobileHeader() {
               <div className="flex items-center gap-2">
                 <Phone className="stroke-primary" />
                 <a
-                  className="text-lg"
-                  href="tel:+34662318408"
+                  className="text text-lg"
+                  href={`tel:${siteConfig.phoneNumber}`}
                   target="_blank"
                   rel="noreferrer"
                 >
-                  +34 662 31 84 08
+                  {siteConfig.phoneNumber}
                 </a>
               </div>
               <div className="flex items-center gap-2">
                 <Mail className="stroke-primary" />
                 <a
                   className="text-lg"
-                  href="mailto:reservations@chamanaibiza.com"
+                  href={`mailto:${siteConfig.email}`}
                   target="_blank"
                   rel="noreferrer"
                 >
-                  reservations@chamanaibiza.com
+                  {siteConfig.email}
                 </a>
               </div>
             </div>

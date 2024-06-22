@@ -33,8 +33,12 @@ export function Footer() {
                 <h6 className="font-bold uppercase">{t("call")}</h6>
                 <div className="flex items-center gap-1">
                   <Phone className="stroke-primary" />
-                  <a href="tel:+34662318408" target="_blank" rel="noreferrer">
-                    +34 662 31 84 08
+                  <a
+                    href={`tel:${siteConfig.phoneNumber}`}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    {siteConfig.phoneNumber}
                   </a>
                 </div>
               </div>
@@ -43,11 +47,11 @@ export function Footer() {
                 <div className="flex items-center gap-1">
                   <Mail className="stroke-primary" />
                   <a
-                    href="mailto:reservations@chamanaibiza.com"
+                    href={`mailto:${siteConfig.email}`}
                     target="_blank"
                     rel="noreferrer"
                   >
-                    reservations@chamanaibiza.com
+                    {siteConfig.email}
                   </a>
                 </div>
               </div>
@@ -82,7 +86,7 @@ export function Footer() {
         </div>
         <Separator />
         <p className="text-balance text-center leading-loose text-muted-foreground md:text-left">
-          ©2024 Chamana Ibiza
+          &copy; {new Date().getFullYear()} {siteConfig.name}
         </p>
       </div>
     </footer>

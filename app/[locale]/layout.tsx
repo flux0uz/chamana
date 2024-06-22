@@ -59,7 +59,7 @@ export async function generateMetadata({
       languages: {
         "x-default": "/es",
         es: "/es",
-        fr: "/fr",
+        fr: "/en",
       },
     },
   };
@@ -77,7 +77,7 @@ export default async function LocaleLayout({
   const jsonLd: WithContext<Organization> = {
     "@context": "https://schema.org",
     "@type": "Restaurant",
-    name: "Chamana Ibiza",
+    name: siteConfig.name,
     logo: absoluteUrl("/images/logo-chamana.png"),
     sameAs: siteConfig.socialLinks.map((link) => link.href),
     url: absoluteUrl(`/${locale}`),
@@ -88,7 +88,8 @@ export default async function LocaleLayout({
       postalCode: "07800",
       addressCountry: "ES",
     },
-    telephone: "+34 628 222 222", //TODO: update
+    telephone: siteConfig.phoneNumber,
+    email: siteConfig.email,
   };
 
   return (

@@ -5,6 +5,8 @@ import { Metadata } from "next";
 export const siteConfig = {
   name: "Chamana Ibiza",
   shortName: "Chamana",
+  phoneNumber: "+34662318408",
+  email: "reservations@chamanaibiza.com",
   url: env.NEXT_PUBLIC_APP_URL,
   openGraphImage: {
     images: [`${env.NEXT_PUBLIC_APP_URL}/`],
