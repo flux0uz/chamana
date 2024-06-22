@@ -2,9 +2,9 @@ import * as React from "react";
 import { useTranslations } from "next-intl";
 import { Mail, MapPin, Phone } from "lucide-react";
 
-import { siteConfig } from "@/config/site";
 import { Separator } from "@/components/ui/separator";
 import { BookModal } from "@/components/layout/book-modal";
+import { siteConfig } from "@/config/site";
 
 export function Footer() {
   const t = useTranslations("Footer");
@@ -33,8 +33,8 @@ export function Footer() {
                 <h6 className="font-bold uppercase">{t("call")}</h6>
                 <div className="flex items-center gap-1">
                   <Phone className="stroke-primary" />
-                  <a href="tel:+34628222222" target="_blank" rel="noreferrer">
-                    +34 628 222 222 //TODO: update
+                  <a href="tel:+34662318408" target="_blank" rel="noreferrer">
+                    +34 662 31 84 08
                   </a>
                 </div>
               </div>
@@ -56,7 +56,7 @@ export function Footer() {
               <h6 className="font-bold uppercase">{t("reserve.title")}</h6>
               <BookModal
                 trigger={
-                  <p className="w-fit cursor-pointer border-b-2 border-primary">
+                  <p className="w-fit cursor-pointer border-b-2 border-primary font-medium uppercase">
                     {t("reserve.text")}
                   </p>
                 }

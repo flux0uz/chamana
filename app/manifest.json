@@ -1,0 +1,14 @@
+{
+  "name": "Chamana Ibiza",
+  "short_name": "Chamana",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "any",
+      "type": "image/x-icon"
+    }
+  ],
+  "theme_color": "#fff",
+  "background_color": "#fff",
+  "display": "standalone"
+}

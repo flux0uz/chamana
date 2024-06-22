@@ -5,6 +5,7 @@ import { Metadata } from "next";
 
 export const siteConfig = {
   name: "Chamana Ibiza",
+  shortName: "Chamana",
   url: env.NEXT_PUBLIC_APP_URL,
   openGraphImage: {
     images: [`${env.NEXT_PUBLIC_APP_URL}/`],
@@ -12,14 +13,14 @@ export const siteConfig = {
   socialLinks: [
     {
       title: "Instagram",
-      href: "", //TODO: update
+      href: "https://www.instagram.com/chamana.ibiza/",
       icon: Instagram,
     },
-    {
-      title: "Facebook",
-      href: "", //TODO: update
-      icon: Facebook,
-    },
+    // {
+    //   title: "Facebook",
+    //   href: "",
+    //   icon: Facebook,
+    // },
   ],
   navLinks: [
     {

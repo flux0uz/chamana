@@ -1,10 +1,10 @@
 {
   "Metadata": {
     "title": "Inicio",
-    "description": "",
+    "description": "Chamana, de dos hermanas argentinas, fusiona las tradiciones culinarias de Argentina con el espíritu bohemio de Ibiza. Un tributo a su herencia chamánica y la energía mística de la isla",
     "about": {
       "title": "Sobre Chamana",
-      "description": ""
+      "description": "Chamana combina el encanto rústico de Argentina con la mística de Ibiza. Disfruta tapas, cócteles de hierbas y ropa artesanal en 'La Botica', celebrando tradiciones chamánicas."
     }
   },
   "ErrorCard": {
@@ -44,6 +44,37 @@
       "subTitle": "Sobre Chamana",
       "title": "Bienvenido a Chamana, donde Argentina se encuentra con Ibiza.",
       "text": "Chamana combina el encanto rústico de Argentina con el misticismo de Ibiza. Creado por dos hermanas argentinas, nuestro restaurante y boutique celebran las tradiciones chamánicas y el arte indígena. Disfruta de tapas elaboradas con carne argentina de primera calidad, cócteles de hierbas con ingredientes locales y sagrados, y descubre ropa artesanal en 'La Botica', con piezas de edición limitada y accesorios hechos a mano."
+    }
+  },
+  "About": {
+    "title": "Sobre Chamana",
+    "story": {
+      "subTitle": "Nuestra historia",
+      "title": "Un tributo a la herencia argentina y la energía de Ibiza",
+      "text": "Chamana es el resultado de la pasión de dos hermanas argentinas por la gastronomía, la moda y la espiritualidad. Inspiradas por la belleza de Ibiza y la riqueza de su cultura chamánica, decidieron crear un espacio que combinara lo mejor de ambos mundos. Así nació Chamana, un restaurante y boutique que celebra la herencia argentina y la energía mística de la isla."
+    },
+    "culinary": {
+      "subTitle": "Cocina argentina en Ibiza",
+      "title": "Una experiencia culinaria única",
+      "text": "En Chamana, te invitamos a disfrutar de una experiencia culinaria única, que combina la tradición argentina con la frescura y la creatividad de Ibiza. Nuestra carta de tapas está elaborada con ingredientes locales y de temporada, y destaca por su calidad y sabor. Además, en nuestro bar podrás degustar cócteles de hierbas y vinos de la región, que complementan a la perfección nuestros platos. Ven a descubrir la magia de la cocina argentina en Ibiza.",
+      "cta": "Ver carta de tapas"
+    },
+    "sanctuary": {
+      "subTitle": "Un santuario para el alma",
+      "title": "Relájate y recarga en Chamana",
+      "text": "En Chamana, creemos que la comida es una experiencia sagrada, que debe nutrir no solo el cuerpo, sino también el alma. Por eso, hemos creado un espacio acogedor y relajante, donde puedes desconectar del ajetreo de la vida diaria y recargar tus energías. Ya sea que vengas a disfrutar de una comida con amigos o a relajarte con un cóctel en nuestro jardín, te garantizamos una experiencia inolvidable.",
+      "cta": "Reservar una mesa"
+    },
+    "boutique": {
+      "subTitle": "La Botica",
+      "title": "Moda y belleza artesanal",
+      "text": "En 'La Botica', nuestra boutique de moda y belleza, encontrarás una cuidada selección de ropa, accesorios y productos de belleza artesanales. Desde vestidos de lino y joyas de plata hasta aceites esenciales y hierbas sagradas, cada pieza ha sido cuidadosamente seleccionada por nosotras para reflejar la belleza y la espiritualidad de Ibiza. Ven a descubrir nuestras colecciones únicas y lleva a casa un pedacito de la isla contigo."
+    },
+    "commitment": {
+      "subTitle": "Nuestro compromiso",
+      "title": "Comprometidos con la sostenibilidad y la comunidad",
+      "text": "En Chamana, nos comprometemos a ser un restaurante sostenible y respetuoso con el medio ambiente. Utilizamos ingredientes locales y de temporada en nuestra cocina, reducimos al máximo los residuos y reciclamos todo lo que podemos. Además, apoyamos a la comunidad local colaborando con productores y artesanos de la isla. Creemos que juntos podemos marcar la diferencia y crear un mundo más sostenible y equitativo para todos.",
+      "cta": "Reservar una mesa"
     }
   }
 }
