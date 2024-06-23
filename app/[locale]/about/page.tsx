@@ -61,7 +61,7 @@ export default async function Page() {
               <span className="text-lg font-semibold uppercase text-muted">
                 {t("story.subTitle")}
               </span>
-              <h2 className="text-balance text-3xl md:text-4xl">
+              <h2 className="text-3xl font-bold sm:text-4xl md:text-5xl">
                 {t("story.title")}
               </h2>
             </div>
@@ -87,7 +87,7 @@ export default async function Page() {
               <span className="text-lg font-semibold uppercase text-muted">
                 {t("culinary.subTitle")}
               </span>
-              <h2 className="text-balance text-3xl md:text-4xl">
+              <h2 className="text-3xl font-bold sm:text-4xl md:text-5xl">
                 {t("culinary.title")}
               </h2>
             </div>
@@ -110,7 +110,7 @@ export default async function Page() {
               <span className="text-lg font-semibold uppercase text-muted">
                 {t("sanctuary.subTitle")}
               </span>
-              <h2 className="text-balance text-3xl md:text-4xl">
+              <h2 className="text-3xl font-bold sm:text-4xl md:text-5xl">
                 {t("sanctuary.title")}
               </h2>
             </div>
@@ -143,7 +143,7 @@ export default async function Page() {
               <span className="text-lg font-semibold uppercase text-muted">
                 {t("boutique.subTitle")}
               </span>
-              <h2 className="text-balance text-3xl md:text-4xl">
+              <h2 className="text-3xl font-bold sm:text-4xl md:text-5xl">
                 {t("boutique.title")}
               </h2>
             </div>
@@ -157,7 +157,7 @@ export default async function Page() {
               <span className="text-lg font-semibold uppercase text-muted">
                 {t("commitment.subTitle")}
               </span>
-              <h2 className="text-balance text-3xl md:text-4xl">
+              <h2 className="text-3xl font-bold sm:text-4xl md:text-5xl">
                 {t("commitment.title")}
               </h2>
             </div>

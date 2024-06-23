@@ -39,11 +39,36 @@
     "follow": "Síguenos"
   },
   "Home": {
-    "title": "",
+    "tagline": "Donde Argentina se encuentra con Ibiza",
     "about": {
       "subTitle": "Sobre Chamana",
-      "title": "Bienvenido a Chamana, donde Argentina se encuentra con Ibiza.",
+      "title": "Bienvenido a Chamana.",
       "text": "Chamana combina el encanto rústico de Argentina con el misticismo de Ibiza. Creado por dos hermanas argentinas, nuestro restaurante y boutique celebran las tradiciones chamánicas y el arte indígena. Disfruta de tapas elaboradas con carne argentina de primera calidad, cócteles de hierbas con ingredientes locales y sagrados, y descubre ropa artesanal en 'La Botica', con piezas de edición limitada y accesorios hechos a mano."
+    },
+    "tapas": {
+      "subTitle": "Carta de tapas",
+      "title": "Descubre la magia de la cocina argentina en Ibiza",
+      "text": "En Chamana, te invitamos a disfrutar de una experiencia culinaria única, que combina la tradición argentina con la frescura y la creatividad de Ibiza. Nuestra carta de tapas está elaborada con ingredientes locales y de temporada, y destaca por su calidad y sabor. Ven a descubrir la magia de la cocina argentina en Ibiza."
+    },
+    "cocktails": {
+      "subTitle": "Carta de cócteles",
+      "title": "Cócteles de hierbas y vinos de la región",
+      "text": "En nuestro bar, podrás degustar cócteles de hierbas y vinos de la región, que complementan a la perfección nuestros platos. Nuestros cócteles están elaborados con ingredientes locales y sagrados, que aportan un toque místico y refrescante a tu experiencia en Chamana. Ven a descubrir nuestra carta de cócteles y déjate llevar por la magia de Ibiza."
+    },
+    "wine": {
+      "subTitle": "Carta de vinos",
+      "title": "Vinos de la región y de Argentina",
+      "text": "En Chamana, te ofrecemos una cuidada selección de vinos de la región y de Argentina, que maridan a la perfección con nuestros platos. Desde vinos blancos y rosados frescos y afrutados hasta tintos intensos y especiados, nuestra carta de vinos tiene algo para todos los gustos. Ven a descubrir nuestra selección y déjate llevar por la magia de la cocina argentina en Ibiza."
+    },
+    "mate": {
+      "subTitle": "El mate",
+      "title": "Una tradición argentina",
+      "text": "El mate es una infusión tradicional de Argentina, que se prepara con hojas de yerba mate y agua caliente. Es una bebida social y ritual, que se comparte en grupo y simboliza la amistad y la hospitalidad. En Chamana, te invitamos a disfrutar de una auténtica experiencia de mate, con una selección de yerbas y bombillas de plata. Ven a descubrir esta tradición argentina y déjate llevar por su sabor y su historia."
+    },
+    "book": {
+      "title": "Reserva una mesa en Chamana",
+      "text": "Experimente nuestra exquisita cocina argentina y el ambiente bohemio. Reserve hoy mismo una mesa en Chamana.",
+      "cta": "Reservar una mesa"
     }
   },
   "About": {
