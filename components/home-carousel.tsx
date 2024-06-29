@@ -49,6 +49,7 @@ export function HomeCarousel() {
                 quality={100}
                 alt="Placeholder about"
                 className="object-cover"
+                sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
                 fill
               />
             </AspectRatio>

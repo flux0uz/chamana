@@ -19,6 +19,7 @@ import { BookModal } from "@/components/layout/book-modal";
 
 import logo from "@/public/images/logo-chamana.png";
 import { LocaleSwitcher } from "../locale-switcher";
+import { MenusAccordion } from "../menus-accordion";
 
 export function MobileHeader() {
   const t = useTranslations("Header");
@@ -112,9 +113,7 @@ export function MobileHeader() {
                   ),
               )}
 
-              <p className="text-lg font-semibold uppercase">
-                {t("menu.menus.title")}
-              </p>
+              <MenusAccordion />
 
               <BookModal
                 trigger={

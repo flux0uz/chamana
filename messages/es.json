@@ -43,22 +43,24 @@
     "about": {
       "subTitle": "Sobre Chamana",
       "title": "Bienvenido a Chamana.",
-      "text": "Chamana combina el encanto rústico de Argentina con el misticismo de Ibiza. Creado por dos hermanas argentinas, nuestro restaurante y boutique celebran las tradiciones chamánicas y el arte indígena. Disfruta de tapas elaboradas con carne argentina de primera calidad, cócteles de hierbas con ingredientes locales y sagrados, y descubre ropa artesanal en 'La Botica', con piezas de edición limitada y accesorios hechos a mano."
+      "text": "Chamana mezcla el encanto rústico de Argentina con el espíritu bohemio de Ibiza. Creado por dos hermanas argentinas, nuestro restaurante y boutique celebran las tradiciones chamánicas y el arte indígena. Disfruta de tapas inspiradas en la cocina tradicional argentina, cócteles herbales elaborados con hierbas locales y sagradas, y descubre ropa artesanal en 'La Botica', con piezas de edición limitada y accesorios hechos a mano."
     },
     "tapas": {
       "subTitle": "Carta de tapas",
       "title": "Descubre la magia de la cocina argentina en Ibiza",
-      "text": "En Chamana, te invitamos a disfrutar de una experiencia culinaria única, que combina la tradición argentina con la frescura y la creatividad de Ibiza. Nuestra carta de tapas está elaborada con ingredientes locales y de temporada, y destaca por su calidad y sabor. Ven a descubrir la magia de la cocina argentina en Ibiza."
+      "text": "Nuestro menú de tapas es una celebración de la cocina argentina, con un enfoque en recetas tradicionales, verduras orgánicas y ingredientes premium. Desde empanadas hasta choripán, cada plato está hecho con amor y cuidado, usando solo los ingredientes más frescos y de origen local. Acompaña tus tapas con una copa de Malbec o un cóctel herbal, y experimenta los sabores de Argentina en el corazón de Ibiza.",
+      "cta": "Ver carta de tapas"
     },
     "cocktails": {
       "subTitle": "Carta de cócteles",
       "title": "Cócteles de hierbas y vinos de la región",
-      "text": "En nuestro bar, podrás degustar cócteles de hierbas y vinos de la región, que complementan a la perfección nuestros platos. Nuestros cócteles están elaborados con ingredientes locales y sagrados, que aportan un toque místico y refrescante a tu experiencia en Chamana. Ven a descubrir nuestra carta de cócteles y déjate llevar por la magia de Ibiza."
+      "text": "Nuestro menú de cócteles está inspirado en el poder curativo de las hierbas y plantas. Desde el 'Chamana' – una mezcla de yerba mate, ginebra y limón – hasta el 'Pachamama' – una mezcla de hoja de coca, pisco y lima – cada cóctel es un tributo a la energía mística de la isla y a la herencia chamánica de las hermanas. También ofrecemos una selección de cócteles sin alcohol, hechos con frutas y hierbas frescas, para refrescar y revitalizar tu espíritu.",
+      "cta": "Ver carta de cócteles"
     },
     "wine": {
       "subTitle": "Carta de vinos",
       "title": "Vinos de la región y de Argentina",
-      "text": "En Chamana, te ofrecemos una cuidada selección de vinos de la región y de Argentina, que maridan a la perfección con nuestros platos. Desde vinos blancos y rosados frescos y afrutados hasta tintos intensos y especiados, nuestra carta de vinos tiene algo para todos los gustos. Ven a descubrir nuestra selección y déjate llevar por la magia de la cocina argentina en Ibiza."
+      "text": "En Chamana, te ofrecemos una cuidada selección de vinos Argentinos y franceses, elegidos por su calidad y carácter. Desde audaces Malbecs hasta frescos blancos franceses, cada vino es un reflejo de la tierra y de las personas que lo producen. Levanta tu copa en honor a la tradición y prueba el terruño de Argentina y Francia."
     },
     "mate": {
       "subTitle": "El mate",
@@ -76,7 +78,7 @@
     "story": {
       "subTitle": "Nuestra historia",
       "title": "Un tributo a la herencia argentina y la energía de Ibiza",
-      "text": "Chamana es el resultado de la pasión de dos hermanas argentinas por la gastronomía, la moda y la espiritualidad. Inspiradas por la belleza de Ibiza y la riqueza de su cultura chamánica, decidieron crear un espacio que combinara lo mejor de ambos mundos. Así nació Chamana, un restaurante y boutique que celebra la herencia argentina y la energía mística de la isla."
+      "text": "Chamana es el sueño de dos hermanas argentinas, que comparten una pasión por las tradiciones culinarias de su país y el espíritu bohemio de Ibiza. Querían crear un espacio que reflejara su herencia y amor por la isla, y así nació Chamana. El restaurante y la boutique son un tributo a sus ancestros y a la energía mística de la isla"
     },
     "culinary": {
       "subTitle": "Cocina argentina en Ibiza",
@@ -87,18 +89,18 @@
     "sanctuary": {
       "subTitle": "Un santuario para el alma",
       "title": "Relájate y recarga en Chamana",
-      "text": "En Chamana, creemos que la comida es una experiencia sagrada, que debe nutrir no solo el cuerpo, sino también el alma. Por eso, hemos creado un espacio acogedor y relajante, donde puedes desconectar del ajetreo de la vida diaria y recargar tus energías. Ya sea que vengas a disfrutar de una comida con amigos o a relajarte con un cóctel en nuestro jardín, te garantizamos una experiencia inolvidable.",
+      "text": "Chamana es más que un restaurante y una boutique – es un santuario para el alma. Nuestro espacio está diseñado para inspirar y elevar, con su decoración rústica, arte indígena y jardín exuberante. También organizamos talleres y eventos que celebran las tradiciones chamánicas y la vida holística. Ya sea que busques relajarte o recargar energías, Chamana es el lugar perfecto para hacerlo.",
       "cta": "Reservar una mesa"
     },
     "boutique": {
       "subTitle": "La Botica",
       "title": "Moda y belleza artesanal",
-      "text": "En 'La Botica', nuestra boutique de moda y belleza, encontrarás una cuidada selección de ropa, accesorios y productos de belleza artesanales. Desde vestidos de lino y joyas de plata hasta aceites esenciales y hierbas sagradas, cada pieza ha sido cuidadosamente seleccionada por nosotras para reflejar la belleza y la espiritualidad de Ibiza. Ven a descubrir nuestras colecciones únicas y lleva a casa un pedacito de la isla contigo."
+      "text": "En 'La Botica', nuestra boutique, encontrarás una selección curada de ropa y accesorios artesanales, inspirados en el espíritu bohemio de la isla y la herencia argentina de las hermanas. Desde piezas hechas a mano de edición limitada, cada artículo es una obra de arte en sí misma."
     },
     "commitment": {
       "subTitle": "Nuestro compromiso",
       "title": "Comprometidos con la sostenibilidad y la comunidad",
-      "text": "En Chamana, nos comprometemos a ser un restaurante sostenible y respetuoso con el medio ambiente. Utilizamos ingredientes locales y de temporada en nuestra cocina, reducimos al máximo los residuos y reciclamos todo lo que podemos. Además, apoyamos a la comunidad local colaborando con productores y artesanos de la isla. Creemos que juntos podemos marcar la diferencia y crear un mundo más sostenible y equitativo para todos.",
+      "text": "En Chamana, estamos comprometidos con la sostenibilidad y la comunidad. Suministramos nuestros ingredientes de agricultores y productores locales, para apoyar la economía de la isla y reducir nuestra huella de carbono. Al cenar en Chamana, no solo apoyas a un negocio local – te unes a un movimiento por el cambio positivo.",
       "cta": "Reservar una mesa"
     }
   }

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { getTranslations } from "next-intl/server";
+import { getLocale, getTranslations } from "next-intl/server";
 
 import { HomeCarousel } from "@/components/home-carousel";
 import { BookModal } from "@/components/layout/book-modal";
@@ -9,9 +9,11 @@ import tapasImage from "@/public/images/tapas.jpg";
 import cocktailsImage from "@/public/images/cocktails.jpg";
 import vinosImage from "@/public/images/vinos.jpg";
 import mateImage from "@/public/images/mate.jpg";
+import { Button } from "@/components/ui/button";
 
 export default async function Home() {
   const t = await getTranslations("Home");
+  const locale = await getLocale();
 
   return (
     <div className="min-h-dvh flex-1">
@@ -72,6 +74,15 @@ export default async function Home() {
                 </h2>
               </div>
               <p className="text-lg">{t("tapas.text")}</p>
+              <Button variant="link" size="none" asChild>
+                <a
+                  href={`/menus/chamana-carta-${locale}.pdf`}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  {t("tapas.cta")}
+                </a>
+              </Button>
             </div>
           </div>
         </section>
@@ -88,6 +99,15 @@ export default async function Home() {
                 </h2>
               </div>
               <p className="text-lg">{t("cocktails.text")}</p>
+              <Button variant="link" size="none" asChild>
+                <a
+                  href={`/menus/chamana-cocktails-${locale}.pdf`}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  {t("cocktails.cta")}
+                </a>
+              </Button>
             </div>
             <Image
               src={cocktailsImage}

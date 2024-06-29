@@ -43,22 +43,24 @@
     "about": {
       "subTitle": "About",
       "title": "Welcome to Chamana.",
-      "text": "Chamana blends the rustic charm of Argentina with Ibiza's bohemian spirit. Created by two Argentine sisters, our restaurant and boutique celebrate shamanic traditions and indigenous artistry. Enjoy tapas made with premium Argentine beef, herbal cocktails crafted with local and sacred herbs, and discover artisanal clothing at 'La Botica', featuring limited edition pieces and handmade accessories."
+      "text": "Chamana blends the rustic charm of Argentina with Ibiza's Bohemian spirit. Created by two Argentine sisters, our restaurant and boutique celebrate shamanic traditions and indigenous artistry. Enjoy tapas inspired by traditional Argentine cuisine, herbal cocktails crafted with local and sacred herbs, and discover artisanal clothing at 'La Botica', featuring limited edition pieces and handmade accessories."
     },
     "tapas": {
       "subTitle": "Tapas",
       "title": "A taste of Argentina",
-      "text": "Our tapas menu is a celebration of Argentine cuisine, with a focus on premium beef, organic vegetables, and traditional recipes. From empanadas to choripan, each dish is made with love and care, using only the freshest, locally sourced ingredients. Pair your tapas with a glass of Malbec or a herbal cocktail, and experience the flavors of Argentina in the heart of Ibiza."
+      "text": "Our tapas menu is a celebration of Argentine cuisine, with a focus on traditional recipes, organic vegetables, and premium ingredients. From empanadas to choripan, each dish is made with love and care, using only the freshest, locally sourced ingredients. Pair your tapas with a glass of Malbec or a herbal cocktail, and experience the flavours of Argentina in the heart of Ibiza.",
+      "cta": "View tapas menu"
     },
     "cocktails": {
       "subTitle": "Cocktails",
       "title": "Herbal elixirs",
-      "text": "Our cocktail menu is inspired by the healing power of herbs and plants. From the 'Chamana' – a blend of yerba mate, gin, and lemon – to the 'Pachamama' – a mix of coca leaf, pisco, and lime – each cocktail is a tribute to the island's mystical energy and the sisters' shamanic heritage. We also offer a selection of non-alcoholic cocktails, made with fresh fruit and herbs, to refresh and revitalize your spirit."
+      "text": "Our cocktail menu is inspired by the healing power of herbs and plants. From the 'Chamana' – a blend of yerba mate, gin, and lemon – to the 'Pachamama' – a mix of coca leaf, pisco, and lime – each cocktail is a tribute to the island's mystical energy and the sisters' shamanic heritage. We also offer a selection of non-alcoholic cocktails, made with fresh fruit and herbs, to refresh and revitalize your spirit.",
+      "cta": "View cocktail menu"
     },
     "wine": {
       "subTitle": "Wine",
       "title": "A toast to tradition",
-      "text": "Our wine list features a selection of Argentine and Spanish wines, chosen for their quality and character. From bold Malbecs to crisp Torrontés, each wine is a reflection of the land and the people who produce it. We also offer a range of organic and biodynamic wines, made with sustainable practices, to support the environment and the community. Raise a glass to tradition and taste the terroir of Argentina and Spain."
+      "text": "Our wine list features a selection of Argentine and French wines, chosen for their quality and character. From bold Malbec to crisp French whites, each wine is a reflection of the land and the people who produce it. Raise a glass to tradition and taste the terroir of Argentina and France."
     },
     "mate": {
       "subTitle": "Mate",
@@ -76,7 +78,7 @@
     "story": {
       "subTitle": "Our story",
       "title": "Chamana is a family affair",
-      "text": "Chamana is the brainchild of two Argentine sisters, who share a passion for their country's culinary traditions and Ibiza's bohemian spirit. They wanted to create a space that would reflect their heritage and love for the island, and so Chamana was born. The restaurant and boutique are a tribute to their ancestors, who were shamans and healers, and to the island's mystical energy."
+      "text": "Chamana is the brainchild of two Argentine sisters, who share a passion for their country's culinary traditions and Ibiza's Bohemian spirit. They wanted to create a space that would reflect their heritage and love for the island, and so Chamana was born. The restaurant and boutique are a tribute to their ancestors and to the island's mystical energy."
     },
     "culinary": {
       "subTitle": "Culinary philosophy",
@@ -87,18 +89,18 @@
     "sanctuary": {
       "subTitle": "A sanctuary for the soul",
       "title": "Healing through art and nature",
-      "text": "Chamana is more than just a restaurant and boutique – it's a sanctuary for the soul. Our space is designed to inspire and uplift, with its rustic decor, indigenous art, and lush garden. We also host workshops and events that celebrate shamanic traditions and holistic living. Whether you're looking to relax, recharge, or reconnect with nature, Chamana is the perfect place to do so.",
+      "text": "Chamana is more than just a restaurant and boutique – it's a sanctuary for the soul. Our space is designed to inspire and uplift, with its rustic decor, indigenous art, and lush garden. We also host workshops and events that celebrate shamanic traditions and holistic living. Whether you're looking to relax or recharge, Chamana is the perfect place to do so.",
       "cta": "Reserve a table"
     },
     "boutique": {
       "subTitle": "La Botica",
       "title": "Discover 'La Botica'",
-      "text": "At 'La Botica', our boutique, you'll find a curated selection of artisanal clothing and accessories, inspired by the island's bohemian spirit and the sisters' Argentine heritage. From handmade jewelry to limited edition pieces, each item is a work of art in itself. We also offer a range of beauty products, made with natural and organic ingredients, to pamper your body and soul."
+      "text": "At 'La Botica', our boutique, you'll find a curated selection of artisanal clothing and accessories, inspired by the island's Bohemian spirit and the sisters' Argentine heritage. From handmade limited edition pieces, each item is a work of art in itself."
     },
     "commitment": {
       "subTitle": "Our commitment",
       "title": "Sustainability and community",
-      "text": "At Chamana, we're committed to sustainability and community. We source our ingredients from local farmers and producers, to support the island's economy and reduce our carbon footprint. We also give back to the community through our workshops and events, which promote holistic living and shamanic traditions. By dining at Chamana, you're not just supporting a local business – you're joining a movement for positive change.",
+      "text": "At Chamana, we're committed to sustainability and community. We source our ingredients from local farmers and producers, to support the island's economy and reduce our carbon footprint. By dining at Chamana, you're not just supporting a local business – you're joining a movement for positive change.",
       "cta": "Reserve a table"
     }
   }

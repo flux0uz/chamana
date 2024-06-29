@@ -48,14 +48,14 @@ export default async function Page() {
 
   return (
     <div className="min-h-dvh flex-1">
-      <div className="container space-y-10 py-14 lg:space-y-16">
-        <section>
-          <h1 className="text-center text-4xl sm:text-5xl md:text-6xl">
-            {t("title")}
-          </h1>
-        </section>
+      <section className="py-20 md:py-32 lg:py-40">
+        <h1 className="text-center text-4xl sm:text-5xl md:text-6xl">
+          {t("title")}
+        </h1>
+      </section>
 
-        <section className="flex flex-col items-center gap-8 lg:flex-row lg:gap-14">
+      <section className="py-20 md:py-32 lg:py-40">
+        <div className="container flex flex-col items-center gap-8 lg:flex-row lg:gap-14">
           <div className="w-full space-y-2 lg:w-1/2">
             <div>
               <span className="text-lg font-semibold uppercase text-muted">
@@ -73,9 +73,11 @@ export default async function Page() {
             alt="Placeholder about"
             className="rounded-sm object-cover"
           />
-        </section>
+        </div>
+      </section>
 
-        <section className="flex flex-col items-center gap-8 lg:flex-row lg:gap-14">
+      <section className="bg-secondary py-20 md:py-32 lg:py-40">
+        <div className="container flex flex-col items-center gap-8 lg:flex-row lg:gap-14">
           <Image
             src={placeHolderAbout}
             quality={100}
@@ -102,9 +104,11 @@ export default async function Page() {
               </a>
             </Button>
           </div>
-        </section>
+        </div>
+      </section>
 
-        <section className="flex flex-col items-center gap-8 lg:flex-row lg:gap-14">
+      <section className="py-20 md:py-32 lg:py-40">
+        <div className="container flex flex-col items-center gap-8 lg:flex-row lg:gap-14">
           <div className="w-full space-y-2 lg:w-1/2">
             <div>
               <span className="text-lg font-semibold uppercase text-muted">
@@ -129,9 +133,11 @@ export default async function Page() {
             alt="Placeholder about"
             className="rounded-sm object-cover"
           />
-        </section>
+        </div>
+      </section>
 
-        <section className="flex flex-col items-center gap-8 lg:flex-row lg:gap-14">
+      <section className="bg-secondary py-20 md:py-32 lg:py-40">
+        <div className="container flex flex-col items-center gap-8 lg:flex-row lg:gap-14">
           <Image
             src={placeHolderAbout}
             quality={100}
@@ -149,9 +155,11 @@ export default async function Page() {
             </div>
             <p className="text-lg">{t("boutique.text")}</p>
           </div>
-        </section>
+        </div>
+      </section>
 
-        <section className="flex flex-col items-center gap-8 lg:flex-row lg:gap-14">
+      <section className="py-20 md:py-32 lg:py-40">
+        <div className="container flex flex-col items-center gap-8 lg:flex-row lg:gap-14">
           <div className="w-full space-y-2 lg:w-1/2">
             <div>
               <span className="text-lg font-semibold uppercase text-muted">
@@ -176,8 +184,8 @@ export default async function Page() {
             alt="Placeholder about"
             className="rounded-sm object-cover"
           />
-        </section>
-      </div>
+        </div>
+      </section>
     </div>
   );
 }
