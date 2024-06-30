@@ -88,8 +88,21 @@ export default async function LocaleLayout({
       postalCode: "07800",
       addressCountry: "ES",
     },
+    openingHours: "Th-Su 18:00-02:00",
     telephone: siteConfig.phoneNumber,
     email: siteConfig.email,
+    hasMenu: absoluteUrl(`/menus/chamana-carta-${locale}.pdf`),
+    acceptsReservations: absoluteUrl(`/${locale}`),
+    servesCuisine: ["Argentinian", "Tapas", "Cocktails"],
+    priceRange: "€€",
+    aggregateRating: {
+      "@type": "AggregateRating",
+      reviewCount: "131",
+      ratingCount: "131",
+      ratingValue: "4.8",
+      bestRating: "5",
+      worstRating: "1",
+    },
   };
 
   return (
