@@ -63,7 +63,7 @@ export default async function Home() {
         </div>
       </section>
 
-      <section className="py-20 md:py-32 lg:py-40">
+      <section>
         <HomeCarousel />
       </section>
 
