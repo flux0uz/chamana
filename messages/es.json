@@ -53,13 +53,13 @@
     },
     "cocktails": {
       "subTitle": "Carta de cócteles",
-      "title": "Cócteles de hierbas y vinos de la región",
+      "title": "Cócteles de hierbas de la región",
       "text": "Nuestro menú de cócteles está inspirado en el poder curativo de las hierbas y plantas. Desde el 'Chamana' – una mezcla de yerba mate, ginebra y limón – hasta el 'Pachamama' – una mezcla de hoja de coca, pisco y lima – cada cóctel es un tributo a la energía mística de la isla y a la herencia chamánica de las hermanas. También ofrecemos una selección de cócteles sin alcohol, hechos con frutas y hierbas frescas, para refrescar y revitalizar tu espíritu.",
       "cta": "Ver carta de cócteles"
     },
     "wine": {
       "subTitle": "Carta de vinos",
-      "title": "Vinos de la región y de Argentina",
+      "title": "Vinos de Argentina y Francia",
       "text": "En Chamana, te ofrecemos una cuidada selección de vinos Argentinos y franceses, elegidos por su calidad y carácter. Desde audaces Malbecs hasta frescos blancos franceses, cada vino es un reflejo de la tierra y de las personas que lo producen. Levanta tu copa en honor a la tradición y prueba el terruño de Argentina y Francia."
     },
     "mate": {
