@@ -2,11 +2,15 @@ import Image from "next/image";
 import { Metadata } from "next";
 import { getLocale, getTranslations } from "next-intl/server";
 
+import { siteConfig } from "@/config/site";
 import { Button } from "@/components/ui/button";
 import { BookModal } from "@/components/layout/book-modal";
 
-import placeHolderAbout from "@/public/images/placeholder-about.jpg";
-import { siteConfig } from "@/config/site";
+import storyImage from "@/public/images/story.png";
+import tapasImage from "@/public/images/tapas.png";
+import sanctuaryImage from "@/public/images/sanctuary.png";
+import boticaImage from "@/public/images/botica.png";
+import commitmentImage from "@/public/images/commitment.png";
 
 export async function generateMetadata({
   params: { locale },
@@ -68,9 +72,10 @@ export default async function Page() {
             <p className="text-lg">{t("story.text")}</p>
           </div>
           <Image
-            src={placeHolderAbout}
+            alt="about chamana"
+            placeholder="blur"
+            src={storyImage}
             quality={100}
-            alt="Placeholder about"
             className="rounded-sm object-cover"
           />
         </div>
@@ -79,9 +84,10 @@ export default async function Page() {
       <section className="bg-secondary py-20 md:py-32 lg:py-40">
         <div className="container flex flex-col items-center gap-8 lg:flex-row lg:gap-14">
           <Image
-            src={placeHolderAbout}
+            alt="our tapas"
+            src={tapasImage}
+            placeholder="blur"
             quality={100}
-            alt="Placeholder about"
             className="rounded-sm object-cover"
           />
           <div className="w-full space-y-2 lg:w-1/2">
@@ -128,9 +134,10 @@ export default async function Page() {
             />
           </div>
           <Image
-            src={placeHolderAbout}
+            alt="chamana sanctuary"
+            src={sanctuaryImage}
+            placeholder="blur"
             quality={100}
-            alt="Placeholder about"
             className="rounded-sm object-cover"
           />
         </div>
@@ -139,9 +146,10 @@ export default async function Page() {
       <section className="bg-secondary py-20 md:py-32 lg:py-40">
         <div className="container flex flex-col items-center gap-8 lg:flex-row lg:gap-14">
           <Image
-            src={placeHolderAbout}
+            alt="the botica"
+            src={boticaImage}
+            placeholder="blur"
             quality={100}
-            alt="Placeholder about"
             className="rounded-sm object-cover"
           />
           <div className="w-full space-y-2 lg:w-1/2">
@@ -179,9 +187,10 @@ export default async function Page() {
             />
           </div>
           <Image
-            src={placeHolderAbout}
+            alt="our commitment"
+            src={commitmentImage}
+            placeholder="blur"
             quality={100}
-            alt="Placeholder about"
             className="rounded-sm object-cover"
           />
         </div>

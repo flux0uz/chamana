@@ -13,19 +13,25 @@ import {
 } from "@/components/ui/carousel";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 
-import tapasImage from "@/public/images/tapas.jpg";
-import tapas2Image from "@/public/images/tapas-2.jpg";
-import cocktailsImage from "@/public/images/cocktails.jpg";
-import vinosImage from "@/public/images/vinos.jpg";
-import mateImage from "@/public/images/mate.jpg";
+import sistersImage from "@/public/images/sisters.png";
+import boticaImage from "@/public/images/botica.png";
+import tapasImage from "@/public/images/tapas.png";
+import cocktailsImage from "@/public/images/cocktails.png";
+import vinosImage from "@/public/images/wines.png";
+import mateImage from "@/public/images/mate.png";
+import storyImage from "@/public/images/story.png";
+import commitmentImage from "@/public/images/commitment.png";
 
 export function HomeCarousel() {
   const images = [
+    sistersImage,
+    boticaImage,
     tapasImage,
     cocktailsImage,
     vinosImage,
     mateImage,
-    tapas2Image,
+    storyImage,
+    commitmentImage,
   ];
 
   return (
