@@ -52,7 +52,7 @@ export default async function Page() {
 
   return (
     <div className="min-h-dvh flex-1">
-      <section className="py-20 md:py-32 lg:py-40">
+      <section className="bg-secondary py-20">
         <h1 className="text-center text-4xl sm:text-5xl md:text-6xl">
           {t("title")}
         </h1>

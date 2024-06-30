@@ -49,16 +49,16 @@ export function HomeCarousel() {
             key={i}
             className="basis-full pl-2 md:basis-1/2 lg:basis-1/3"
           >
-            <AspectRatio ratio={16 / 9}>
-              <Image
-                src={img}
-                quality={100}
-                alt="Placeholder about"
-                className="object-cover"
-                sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
-                fill
-              />
-            </AspectRatio>
+            {/* <AspectRatio ratio={16 / 9}> */}
+            <Image
+              src={img}
+              quality={100}
+              alt="Placeholder about"
+              className="object-cover"
+              // sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
+              // fill
+            />
+            {/* </AspectRatio> */}
           </CarouselItem>
         ))}
       </CarouselContent>
