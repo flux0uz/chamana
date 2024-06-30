@@ -73,8 +73,8 @@ export default async function Page() {
           </div>
           <Image
             alt="about chamana"
-            placeholder="blur"
             src={storyImage}
+            placeholder="blur"
             quality={100}
             className="rounded-sm object-cover"
           />

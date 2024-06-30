@@ -24,8 +24,8 @@ export default async function Home() {
           src={landingImage}
           placeholder="blur"
           quality={100}
-          fill
           sizes="100vw"
+          fill
           style={{
             objectFit: "cover",
           }}
@@ -186,7 +186,7 @@ export default async function Home() {
       </div>
 
       <section className="relative w-full bg-cover bg-center py-12 md:py-24 lg:py-32">
-        <div className="absolute inset-0 bg-black opacity-60" />
+        <div className="absolute inset-0 bg-black opacity-40" />
         <div className="container relative mx-auto max-w-3xl px-4 text-center md:px-6">
           <div className="space-y-4 text-white">
             <h2 className="text-3xl font-bold tracking-wide sm:text-4xl md:text-5xl">

@@ -36,14 +36,14 @@ export function MenusAccordion() {
           >
             {t("menu.menus.cocktails")}
           </a>
-          <a
+          {/* <a
             href={`/menus/chamana-vinos-${locale}.pdf`} //TODO: add file
             target="_blank"
             rel="noreferrer"
             className="w-fit text-lg font-medium"
           >
             {t("menu.menus.wine")}
-          </a>
+          </a> */}
         </AccordionContent>
       </AccordionItem>
     </Accordion>
