@@ -25,6 +25,7 @@ export default async function Home() {
           placeholder="blur"
           quality={100}
           sizes="100vw"
+          priority
           fill
           style={{
             objectFit: "cover",
