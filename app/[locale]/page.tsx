@@ -4,6 +4,7 @@ import { getLocale, getTranslations } from "next-intl/server";
 import { BookModal } from "@/components/layout/book-modal";
 import { Button } from "@/components/ui/button";
 
+import landingLogoImage from "@/public/images/circular-flor.png";
 import landingImage from "@/public/images/landing.png";
 import mateImage from "@/public/images/mate.png";
 import sistersImage from "@/public/images/sisters.png";
@@ -19,20 +20,22 @@ export default async function Home() {
     <div className="min-h-dvh flex-1">
       <header className="relative h-[calc(100dvh-80px)]">
         <Image
-          alt="landing"
-          src={landingImage}
+          alt="logo chamana ibiza"
+          src={landingLogoImage}
           placeholder="blur"
           quality={100}
           sizes="100vw"
           priority
           fill
           style={{
-            objectFit: "cover",
+            objectFit: "contain",
+            opacity: 0.1,
+            zIndex: 20,
           }}
         />
-        <div className="absolute inset-0 bg-black opacity-40" />
-        <div className="absolute inset-0 flex items-center justify-center px-6">
-          <h1 className="text-center text-4xl text-white sm:text-5xl md:text-6xl">
+        <div className="absolute inset-0 z-10 bg-secondary" />
+        <div className="absolute inset-0 z-20 mx-auto flex max-w-xl items-center justify-center px-6">
+          <h1 className="text-center text-4xl sm:text-5xl md:text-6xl">
             {t("tagline")}
           </h1>
         </div>

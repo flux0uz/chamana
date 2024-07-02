@@ -17,6 +17,9 @@
       "home": "Inicio",
       "about": "Sobre Chamana",
       "book": "Reserva una mesa",
+      "openingHours": {
+        "text": "Miercoles a domingo, de 18:00 a 02:00"
+      },
       "menus": {
         "title": "Cartas",
         "menu": "Tapas",
@@ -30,6 +33,10 @@
   },
   "Footer": {
     "address": "Dirección",
+    "openingHours": {
+      "title": "Horario de apertura",
+      "text": "Miercoles a domingo, de 18:00 a 02:00"
+    },
     "call": "Llamada",
     "email": "Email",
     "reserve": {

@@ -17,6 +17,9 @@
       "home": "Home",
       "about": "About",
       "book": "Book a table",
+      "openingHours": {
+        "text": "Wednesday to Sunday, 18:00 to 02:00"
+      },
       "menus": {
         "title": "Menus",
         "menu": "Tapas",
@@ -30,6 +33,10 @@
   },
   "Footer": {
     "address": "Address",
+    "openingHours": {
+      "title": "Opening hours",
+      "text": "Wednesday to Sunday, 18:00 to 02:00"
+    },
     "call": "Call",
     "email": "Email",
     "reserve": {

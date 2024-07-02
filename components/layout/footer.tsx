@@ -1,6 +1,6 @@
 import * as React from "react";
 import { useTranslations } from "next-intl";
-import { Mail, MapPin, Phone } from "lucide-react";
+import { Clock, HourglassIcon, Mail, MapPin, Phone } from "lucide-react";
 
 import { Separator } from "@/components/ui/separator";
 import { BookModal } from "@/components/layout/book-modal";
@@ -14,18 +14,29 @@ export function Footer() {
       <div className="container flex flex-col gap-6">
         <div>
           <div className="mx-auto flex flex-col gap-6 lg:flex-row lg:gap-0">
-            <div className="w-full space-y-2 lg:w-1/4">
-              <h6 className="font-bold uppercase">{t("address")}</h6>
-              <div className="flex items-center gap-1">
-                <MapPin className="stroke-primary" />
-                <a
-                  className="text-balance"
-                  href="https://maps.app.goo.gl/udsfppCSizCRMReZ6"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Carrer Josep Lluis Sert 4, 07800 Ibiza
-                </a>
+            <div className="w-full space-y-6 lg:w-1/4">
+              <div className="space-y-2">
+                <h6 className="font-bold uppercase">{t("address")}</h6>
+                <div className="flex items-center gap-1">
+                  <MapPin className="stroke-primary" />
+                  <a
+                    className="text-balance"
+                    href="https://maps.app.goo.gl/udsfppCSizCRMReZ6"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Carrer Josep Lluis Sert 4, 07800 Ibiza
+                  </a>
+                </div>
+              </div>
+              <div className="space-y-2">
+                <h6 className="font-bold uppercase">
+                  {t("openingHours.title")}
+                </h6>
+                <div className="flex items-center gap-1">
+                  <Clock className="stroke-primary" />
+                  <p>{t("openingHours.text")}</p>
+                </div>
               </div>
             </div>
             <div className="w-full space-y-6 lg:w-1/4">

@@ -6,7 +6,7 @@ import clsx from "clsx";
 import { LinkProps } from "next/link";
 import { useRouter } from "next/navigation";
 import { useTranslations } from "next-intl";
-import { Mail, MapPin, Phone } from "lucide-react";
+import { Clock, Mail, MapPin, Phone } from "lucide-react";
 
 import { Link, usePathname } from "@/navigation";
 import { siteConfig } from "@/config/site";
@@ -141,6 +141,10 @@ export function MobileHeader() {
             <Separator className="my-12" />
 
             <div className="space-y-4">
+              <div className="flex items-center gap-2">
+                <Clock className="stroke-primary" />
+                <p>{t("menu.openingHours.text")}</p>
+              </div>
               <div className="flex items-center gap-2">
                 <MapPin className="stroke-primary" />
                 <a
