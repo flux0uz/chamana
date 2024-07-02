@@ -35,7 +35,7 @@ export default async function Home() {
         />
         <div className="absolute inset-0 z-10 bg-secondary" />
         <div className="absolute inset-0 z-20 mx-auto flex max-w-xl items-center justify-center px-6">
-          <h1 className="text-center text-4xl sm:text-5xl md:text-6xl">
+          <h1 className="text-center text-4xl text-white sm:text-5xl md:text-6xl">
             {t("tagline")}
           </h1>
         </div>
