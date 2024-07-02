@@ -1,7 +1,6 @@
 import Image from "next/image";
 import { getLocale, getTranslations } from "next-intl/server";
 
-import { HomeCarousel } from "@/components/home-carousel";
 import { BookModal } from "@/components/layout/book-modal";
 import { Button } from "@/components/ui/button";
 
@@ -31,7 +30,7 @@ export default async function Home() {
             objectFit: "cover",
           }}
         />
-        <div className="absolute inset-0 bg-black opacity-30" />
+        <div className="absolute inset-0 bg-black opacity-40" />
         <div className="absolute inset-0 flex items-center justify-center px-6">
           <h1 className="text-center text-4xl text-white sm:text-5xl md:text-6xl">
             {t("tagline")}
@@ -64,12 +63,12 @@ export default async function Home() {
         </div>
       </section>
 
-      <section>
+      {/* <section>
         <HomeCarousel />
-      </section>
+      </section> */}
 
       <div className="flex flex-col">
-        <section className="w-full py-20 md:py-32 lg:py-40">
+        <section className="w-full bg-secondary py-20 md:py-32 lg:py-40">
           <div className="container flex flex-col items-center justify-center gap-8 px-4 md:flex-row md:px-6">
             <Image
               alt="Tapas"
@@ -103,7 +102,7 @@ export default async function Home() {
           </div>
         </section>
 
-        <section className="w-full bg-secondary py-20 md:py-32 lg:py-40">
+        <section className="w-full py-20 md:py-32 lg:py-40">
           <div className="container flex flex-col-reverse items-center justify-center gap-8 px-4 md:flex-row md:px-6">
             <div className="space-y-4 text-center md:max-w-md md:text-left">
               <div>
@@ -136,7 +135,8 @@ export default async function Home() {
             />
           </div>
         </section>
-        <section className="w-full py-20 md:py-32 lg:py-40">
+
+        <section className="w-full bg-secondary py-20 md:py-32 lg:py-40">
           <div className="container flex flex-col items-center justify-center gap-8 px-4 md:flex-row md:px-6">
             <Image
               alt="Vinos"
@@ -160,7 +160,8 @@ export default async function Home() {
             </div>
           </div>
         </section>
-        <section className="w-full bg-secondary py-20 md:py-32 lg:py-40">
+
+        <section className="w-full py-20 md:py-32 lg:py-40">
           <div className="container flex flex-col-reverse items-center justify-center gap-8 px-4 md:flex-row md:px-6">
             <div className="space-y-4 text-center md:max-w-md md:text-left">
               <div>
@@ -186,8 +187,8 @@ export default async function Home() {
         </section>
       </div>
 
-      <section className="relative w-full bg-cover bg-center py-12 md:py-24 lg:py-32">
-        <div className="absolute inset-0 bg-black opacity-40" />
+      <section className="relative w-full bg-secondary bg-center py-12 md:py-24 lg:py-32">
+        <div className="absolute inset-0 bg-black opacity-30" />
         <div className="container relative mx-auto max-w-3xl px-4 text-center md:px-6">
           <div className="space-y-4 text-white">
             <h2 className="text-3xl font-bold tracking-wide sm:text-4xl md:text-5xl">

@@ -6,11 +6,9 @@ import { siteConfig } from "@/config/site";
 import { Button } from "@/components/ui/button";
 import { BookModal } from "@/components/layout/book-modal";
 
-import storyImage from "@/public/images/story.png";
 import tapasImage from "@/public/images/tapas.png";
 import sanctuaryImage from "@/public/images/sanctuary.png";
 import boticaImage from "@/public/images/botica.png";
-import commitmentImage from "@/public/images/commitment.png";
 
 export async function generateMetadata({
   params: { locale },
@@ -52,15 +50,15 @@ export default async function Page() {
 
   return (
     <div className="min-h-dvh flex-1">
-      <section className="bg-secondary py-20">
+      <section className="hidden bg-secondary py-20">
         <h1 className="text-center text-4xl sm:text-5xl md:text-6xl">
           {t("title")}
         </h1>
       </section>
 
       <section className="py-20 md:py-32 lg:py-40">
-        <div className="container flex flex-col items-center gap-8 lg:flex-row lg:gap-14">
-          <div className="w-full space-y-2 lg:w-1/2">
+        <div className="container max-w-3xl text-center">
+          <div className="flex w-full flex-col items-center justify-center gap-8 space-y-2">
             <div>
               <span className="text-lg font-semibold uppercase text-muted">
                 {t("story.subTitle")}
@@ -71,13 +69,6 @@ export default async function Page() {
             </div>
             <p className="text-lg">{t("story.text")}</p>
           </div>
-          <Image
-            alt="about chamana"
-            src={storyImage}
-            placeholder="blur"
-            quality={100}
-            className="rounded-sm object-cover"
-          />
         </div>
       </section>
 
@@ -167,8 +158,8 @@ export default async function Page() {
       </section>
 
       <section className="py-20 md:py-32 lg:py-40">
-        <div className="container flex flex-col items-center gap-8 lg:flex-row lg:gap-14">
-          <div className="w-full space-y-2 lg:w-1/2">
+        <div className="container max-w-3xl text-center">
+          <div className="flex w-full flex-col items-center justify-center gap-8 space-y-2">
             <div>
               <span className="text-lg font-semibold uppercase text-muted">
                 {t("commitment.subTitle")}
@@ -186,13 +177,6 @@ export default async function Page() {
               }
             />
           </div>
-          <Image
-            alt="our commitment"
-            src={commitmentImage}
-            placeholder="blur"
-            quality={100}
-            className="rounded-sm object-cover"
-          />
         </div>
       </section>
     </div>
