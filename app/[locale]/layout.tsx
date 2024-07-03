@@ -88,7 +88,7 @@ export default async function LocaleLayout({
       postalCode: "07800",
       addressCountry: "ES",
     },
-    openingHours: "Th-Su 18:00-02:00",
+    openingHours: "We-Su 18:00-02:00",
     telephone: siteConfig.phoneNumber,
     email: siteConfig.email,
     hasMenu: absoluteUrl(`/menus/chamana-carta-${locale}.pdf`),
