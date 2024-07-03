@@ -6,8 +6,8 @@ import { siteConfig } from "@/config/site";
 import { Button } from "@/components/ui/button";
 import { BookModal } from "@/components/layout/book-modal";
 
+import kitchenImage from "@/public/images/kitchen.png";
 import sistersImage from "@/public/images/sisters.png";
-import tapasImage from "@/public/images/tapas.png";
 import sanctuaryImage from "@/public/images/sanctuary.png";
 import boticaImage from "@/public/images/botica.png";
 
@@ -51,13 +51,13 @@ export default async function Page() {
 
   return (
     <div className="min-h-dvh flex-1">
-      <section className="hidden bg-secondary py-20">
+      <section className="hidden">
         <h1 className="text-center text-4xl sm:text-5xl md:text-6xl">
           {t("title")}
         </h1>
       </section>
 
-      <section className="py-20 md:py-32 lg:py-40">
+      <section className="pb-20 pt-10 md:pb-32 md:pt-20 lg:pb-40 lg:pt-24">
         <div className="container max-w-3xl text-center">
           <div className="flex w-full flex-col items-center justify-center gap-8 space-y-2">
             <div>
@@ -88,7 +88,7 @@ export default async function Page() {
         <div className="container flex flex-col items-center gap-8 lg:flex-row lg:justify-between lg:gap-14">
           <Image
             alt="our tapas"
-            src={tapasImage}
+            src={kitchenImage}
             width={500}
             height={500}
             placeholder="blur"

@@ -41,7 +41,7 @@ export default async function Home() {
 
       <section className="py-20 md:py-32 lg:py-40">
         <div className="container flex flex-col items-center justify-center gap-8 px-4 md:flex-row md:px-6">
-          <div className="w-full space-y-2 lg:w-1/2">
+          <div className="w-full space-y-4 text-center md:text-left lg:w-1/2">
             <div>
               <span className="text-lg font-semibold uppercase text-muted">
                 {t("about.subTitle")}
@@ -78,7 +78,7 @@ export default async function Home() {
               height={500}
               className="overflow-hidden"
             />
-            <div className="space-y-4 text-center md:max-w-md md:text-left">
+            <div className="space-y-4 text-center md:text-left lg:w-1/2">
               <div>
                 <span className="text-lg font-semibold uppercase text-muted">
                   {t("tapas.subTitle")}
@@ -103,7 +103,7 @@ export default async function Home() {
 
         <section className="w-full py-20 md:py-32 lg:py-40">
           <div className="container flex flex-col-reverse items-center justify-center gap-8 px-4 md:flex-row md:px-6">
-            <div className="space-y-4 text-center md:max-w-md md:text-left">
+            <div className="space-y-4 text-center md:text-left lg:w-1/2">
               <div>
                 <span className="text-lg font-semibold uppercase text-muted">
                   {t("cocktails.subTitle")}
@@ -112,7 +112,9 @@ export default async function Home() {
                   {t("cocktails.title")}
                 </h2>
               </div>
-              <p className="text-lg">{t("cocktails.text")}</p>
+              <p className="whitespace-pre-line text-lg">
+                {t("cocktails.text")}
+              </p>
               <Button variant="link" size="none" asChild>
                 <a
                   href={`/menus/chamana-cocktails-${locale}.pdf`}
@@ -144,7 +146,7 @@ export default async function Home() {
               height={500}
               className="overflow-hidden"
             />
-            <div className="space-y-4 text-center md:max-w-md md:text-left">
+            <div className="space-y-4 text-center md:text-left lg:w-1/2">
               <div>
                 <span className="text-lg font-semibold uppercase text-muted">
                   {t("wine.subTitle")}
@@ -160,7 +162,7 @@ export default async function Home() {
 
         <section className="w-full py-20 md:py-32 lg:py-40">
           <div className="container flex flex-col-reverse items-center justify-center gap-8 px-4 md:flex-row md:px-6">
-            <div className="space-y-4 text-center md:max-w-md md:text-left">
+            <div className="space-y-4 text-center md:text-left lg:w-1/2">
               <div>
                 <span className="text-lg font-semibold uppercase text-muted">
                   {t("mate.subTitle")}
@@ -169,7 +171,7 @@ export default async function Home() {
                   {t("mate.title")}
                 </h2>
               </div>
-              <p className="text-lg">{t("mate.text")}</p>
+              <p className="whitespace-pre-line text-lg">{t("mate.text")}</p>
             </div>
             <Image
               alt="Mate"
