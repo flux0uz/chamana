@@ -65,7 +65,7 @@ function ForkWidget({ className }: React.ComponentProps<"div">) {
         allow="payment *"
         style={{
           width: "100%",
-          minHeight: "300px",
+          minHeight: "400px",
           border: "none",
           overflow: "scroll",
         }}

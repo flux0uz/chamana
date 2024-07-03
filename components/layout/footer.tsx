@@ -18,7 +18,7 @@ export function Footer() {
               <div className="space-y-2">
                 <h6 className="font-bold uppercase">{t("address")}</h6>
                 <div className="flex items-center gap-1">
-                  <MapPin className="stroke-primary" />
+                  <MapPin className="h-5 w-5 stroke-primary" />
                   <a
                     className="text-balance"
                     href="https://maps.app.goo.gl/udsfppCSizCRMReZ6"
@@ -34,7 +34,7 @@ export function Footer() {
                   {t("openingHours.title")}
                 </h6>
                 <div className="flex items-center gap-1">
-                  <Clock className="stroke-primary" />
+                  <Clock className="h-5 w-5 stroke-primary" />
                   <p>{t("openingHours.text")}</p>
                 </div>
               </div>
@@ -43,7 +43,7 @@ export function Footer() {
               <div className="space-y-2">
                 <h6 className="font-bold uppercase">{t("call")}</h6>
                 <div className="flex items-center gap-1">
-                  <Phone className="stroke-primary" />
+                  <Phone className="h-5 w-5 stroke-primary" />
                   <a
                     href={`tel:${siteConfig.phoneNumber}`}
                     target="_blank"
@@ -56,7 +56,7 @@ export function Footer() {
               <div className="space-y-2">
                 <h6 className="font-bold uppercase">{t("email")}</h6>
                 <div className="flex items-center gap-1">
-                  <Mail className="stroke-primary" />
+                  <Mail className="h-5 w-5 stroke-primary" />
                   <a
                     href={`mailto:${siteConfig.email}`}
                     target="_blank"
@@ -88,7 +88,7 @@ export function Footer() {
                     rel="noreferrer"
                     aria-label={link.title}
                   >
-                    <link.icon className="h-7 w-7 fill-primary" />
+                    <link.icon className="h-5 w-5 fill-primary" />
                   </a>
                 ))}
               </div>
@@ -97,7 +97,7 @@ export function Footer() {
         </div>
         <Separator />
         <p className="text-balance text-center leading-loose text-muted-foreground md:text-left">
-          &copy; {new Date().getFullYear()} {siteConfig.name}
+          &copy; {new Date().getFullYear()} {siteConfig.name} | {t("rights")}
         </p>
       </div>
     </footer>

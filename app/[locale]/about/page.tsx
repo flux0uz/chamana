@@ -6,6 +6,7 @@ import { siteConfig } from "@/config/site";
 import { Button } from "@/components/ui/button";
 import { BookModal } from "@/components/layout/book-modal";
 
+import sistersImage from "@/public/images/sisters.png";
 import tapasImage from "@/public/images/tapas.png";
 import sanctuaryImage from "@/public/images/sanctuary.png";
 import boticaImage from "@/public/images/botica.png";
@@ -67,18 +68,30 @@ export default async function Page() {
                 {t("story.title")}
               </h2>
             </div>
-            <p className="text-lg">{t("story.text")}</p>
+            <Image
+              alt="founder sisters"
+              src={sistersImage}
+              priority
+              width={500}
+              height={500}
+              placeholder="blur"
+              className="rounded-sm object-cover"
+            />
+            <p className="whitespace-pre-line text-pretty text-lg">
+              {t("story.text")}
+            </p>
           </div>
         </div>
       </section>
 
       <section className="bg-secondary py-20 md:py-32 lg:py-40">
-        <div className="container flex flex-col items-center gap-8 lg:flex-row lg:gap-14">
+        <div className="container flex flex-col items-center gap-8 lg:flex-row lg:justify-between lg:gap-14">
           <Image
             alt="our tapas"
             src={tapasImage}
+            width={500}
+            height={500}
             placeholder="blur"
-            quality={100}
             className="rounded-sm object-cover"
           />
           <div className="w-full space-y-2 lg:w-1/2">
@@ -90,7 +103,7 @@ export default async function Page() {
                 {t("culinary.title")}
               </h2>
             </div>
-            <p className="text-lg">{t("culinary.text")}</p>
+            <p className="whitespace-pre-line text-lg">{t("culinary.text")}</p>
             <Button variant="link" size="none" asChild>
               <a
                 href={`/menus/chamana-carta-${locale}.pdf`}
@@ -105,7 +118,7 @@ export default async function Page() {
       </section>
 
       <section className="py-20 md:py-32 lg:py-40">
-        <div className="container flex flex-col items-center gap-8 lg:flex-row lg:gap-14">
+        <div className="container flex flex-col items-center gap-8 lg:flex-row lg:justify-between lg:gap-14">
           <div className="w-full space-y-2 lg:w-1/2">
             <div>
               <span className="text-lg font-semibold uppercase text-muted">
@@ -115,7 +128,7 @@ export default async function Page() {
                 {t("sanctuary.title")}
               </h2>
             </div>
-            <p className="text-lg">{t("sanctuary.text")}</p>
+            <p className="whitespace-pre-line text-lg">{t("sanctuary.text")}</p>
             <BookModal
               trigger={
                 <p className="w-fit cursor-pointer border-b-2 border-primary font-medium uppercase">
@@ -127,20 +140,22 @@ export default async function Page() {
           <Image
             alt="chamana sanctuary"
             src={sanctuaryImage}
+            width={500}
+            height={500}
             placeholder="blur"
-            quality={100}
             className="rounded-sm object-cover"
           />
         </div>
       </section>
 
       <section className="bg-secondary py-20 md:py-32 lg:py-40">
-        <div className="container flex flex-col items-center gap-8 lg:flex-row lg:gap-14">
+        <div className="container flex flex-col items-center gap-8 lg:flex-row lg:justify-between lg:gap-14">
           <Image
             alt="the botica"
             src={boticaImage}
+            width={500}
+            height={500}
             placeholder="blur"
-            quality={100}
             className="rounded-sm object-cover"
           />
           <div className="w-full space-y-2 lg:w-1/2">
@@ -152,7 +167,7 @@ export default async function Page() {
                 {t("boutique.title")}
               </h2>
             </div>
-            <p className="text-lg">{t("boutique.text")}</p>
+            <p className="whitespace-pre-line text-lg">{t("boutique.text")}</p>
           </div>
         </div>
       </section>
@@ -168,7 +183,9 @@ export default async function Page() {
                 {t("commitment.title")}
               </h2>
             </div>
-            <p className="text-lg">{t("commitment.text")}</p>
+            <p className="whitespace-pre-line text-lg">
+              {t("commitment.text")}
+            </p>
             <BookModal
               trigger={
                 <p className="w-fit cursor-pointer border-b-2 border-primary font-medium uppercase">
