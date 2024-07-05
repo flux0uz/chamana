@@ -1,5 +1,6 @@
 import "../globals.css";
 
+import * as React from "react";
 import Script from "next/script";
 import type { Metadata } from "next";
 import { getMessages, getTranslations } from "next-intl/server";
@@ -14,6 +15,7 @@ import { absoluteUrl } from "@/lib/utils";
 import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
 import { MobileHeader } from "@/components/layout/mobile-header";
+import { NavigationEvents } from "@/components/layout/navigation-events";
 
 export async function generateMetadata({
   params: { locale },
@@ -121,6 +123,14 @@ export default async function LocaleLayout({
           }}
         />
         <GoogleTagManager gtmId="GTM-K6SC72WQ" />
+        <noscript>
+          <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-K6SC72WQ"
+            height="0"
+            width="0"
+            style={{ display: "none", visibility: "hidden" }}
+          ></iframe>
+        </noscript>
 
         <body>
           <NextIntlClientProvider messages={messages}>
@@ -133,6 +143,10 @@ export default async function LocaleLayout({
               <Footer />
             </div>
           </NextIntlClientProvider>
+
+          <React.Suspense fallback={null}>
+            <NavigationEvents />
+          </React.Suspense>
         </body>
       </>
     </html>
