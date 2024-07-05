@@ -5,7 +5,7 @@ import type { Metadata } from "next";
 import { getMessages, getTranslations } from "next-intl/server";
 import { NextIntlClientProvider } from "next-intl";
 import { Organization, WithContext } from "schema-dts";
-// import { GoogleAnalytics } from "@next/third-parties/google";
+import { GoogleTagManager } from "@next/third-parties/google";
 
 import { siteConfig } from "@/config/site";
 import { fontGrostesk, fontObra } from "@/lib/font";
@@ -120,8 +120,8 @@ export default async function LocaleLayout({
             __html: JSON.stringify(jsonLd),
           }}
         />
+        <GoogleTagManager gtmId="GTM-K6SC72WQ" />
 
-        {/* <GoogleAnalytics gaId="G-XYZ" /> */}
         <body>
           <NextIntlClientProvider messages={messages}>
             <div className="relative flex min-h-screen flex-col">
