@@ -1,6 +1,7 @@
-import { Instagram } from "@/components/icons/instagram";
-import { env } from "@/env.mjs";
 import { Metadata } from "next";
+import { env } from "@/env.mjs";
+import { Facebook } from "@/components/icons/facebook";
+import { Instagram } from "@/components/icons/instagram";
 
 export const siteConfig = {
   name: "Chamana Ibiza",
@@ -9,7 +10,7 @@ export const siteConfig = {
   email: "reservations@chamanaibiza.com",
   url: env.NEXT_PUBLIC_APP_URL,
   openGraphImage: {
-    images: [`${env.NEXT_PUBLIC_APP_URL}/`],
+    images: [`${env.NEXT_PUBLIC_APP_URL}/og.png`],
   } as Metadata["openGraph"],
   socialLinks: [
     {
@@ -17,11 +18,11 @@ export const siteConfig = {
       href: "https://www.instagram.com/chamana.ibiza/",
       icon: Instagram,
     },
-    // {
-    //   title: "Facebook",
-    //   href: "",
-    //   icon: Facebook,
-    // },
+    {
+      title: "Facebook",
+      href: "https://www.facebook.com/profile.php?id=61552224514424",
+      icon: Facebook,
+    },
   ],
   navLinks: [
     {
