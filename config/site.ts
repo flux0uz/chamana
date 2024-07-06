@@ -10,7 +10,7 @@ export const siteConfig = {
   email: "reservations@chamanaibiza.com",
   url: env.NEXT_PUBLIC_APP_URL,
   openGraphImage: {
-    images: [`${env.NEXT_PUBLIC_APP_URL}/og.png`],
+    images: [`${env.NEXT_PUBLIC_APP_URL}/images/og.png`],
   } as Metadata["openGraph"],
   socialLinks: [
     {
