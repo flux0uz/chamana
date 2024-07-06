@@ -137,7 +137,7 @@ export function MobileHeader() {
             <div className="space-y-4">
               <div className="flex items-center gap-2">
                 <Clock className="h-5 w-5 stroke-primary" />
-                <p>{t("menu.openingHours.text")}</p>
+                <p className="text-lg">{t("menu.openingHours.text")}</p>
               </div>
               <div className="flex items-center gap-2">
                 <MapPin className="h-5 w-5 stroke-primary" />
@@ -153,7 +153,7 @@ export function MobileHeader() {
               <div className="flex items-center gap-2">
                 <Phone className="h-5 w-5 stroke-primary" />
                 <a
-                  className="text text-lg"
+                  className="text-lg"
                   href={`tel:${siteConfig.phoneNumber}`}
                   target="_blank"
                   rel="noreferrer"
