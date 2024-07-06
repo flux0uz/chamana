@@ -9,7 +9,9 @@ export function NavigationEvents() {
   const searchParams = useSearchParams();
 
   React.useEffect(() => {
-    gtmPageView({ page_title: pathname });
+    if (typeof window !== undefined) {
+      gtmPageView({ page_title: window.document.title });
+    }
   }, [pathname, searchParams]);
 
   return null;
