@@ -113,16 +113,32 @@ export default async function LocaleLayout({
       lang={locale}
       className={`${fontGrostesk.variable} ${fontObra.variable}`}
     >
-      <>
-        <Script
-          id="json-ld-organization"
-          type="application/ld+json"
-          strategy="afterInteractive"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify(jsonLd),
-          }}
-        />
-        <GoogleTagManager gtmId="GTM-K6SC72WQ" />
+      <Script
+        id="json-ld-organization"
+        type="application/ld+json"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(jsonLd),
+        }}
+      />
+      <GoogleTagManager gtmId="GTM-K6SC72WQ" />
+
+      <body>
+        <NextIntlClientProvider messages={messages}>
+          <div className="relative flex min-h-screen flex-col">
+            <Header />
+            <MobileHeader />
+            <main className="flex-1">
+              <div className="border-b">{children}</div>
+            </main>
+            <Footer />
+          </div>
+        </NextIntlClientProvider>
+
+        <React.Suspense fallback={null}>
+          <NavigationEvents />
+        </React.Suspense>
+
         <noscript>
           <iframe
             src="https://www.googletagmanager.com/ns.html?id=GTM-K6SC72WQ"
@@ -131,24 +147,7 @@ export default async function LocaleLayout({
             style={{ display: "none", visibility: "hidden" }}
           ></iframe>
         </noscript>
-
-        <body>
-          <NextIntlClientProvider messages={messages}>
-            <div className="relative flex min-h-screen flex-col">
-              <Header />
-              <MobileHeader />
-              <main className="flex-1">
-                <div className="border-b">{children}</div>
-              </main>
-              <Footer />
-            </div>
-          </NextIntlClientProvider>
-
-          <React.Suspense fallback={null}>
-            <NavigationEvents />
-          </React.Suspense>
-        </body>
-      </>
+      </body>
     </html>
   );
 }
