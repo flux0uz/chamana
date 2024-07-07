@@ -3,7 +3,7 @@ import { defaultLocale, locales } from "@/navigation";
 import { env } from "@/env.mjs";
 
 const host = env.NEXT_PUBLIC_APP_URL;
-const pathnames = ["/", "/about"];
+const pathnames = ["/", "/about", "/reservations"];
 
 function getUrl(pathname: string, locale: string) {
   return `${host}/${locale}${pathname === "/" ? "" : pathname}`;

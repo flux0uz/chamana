@@ -5,6 +5,10 @@
     "about": {
       "title": "Sobre Chamana",
       "description": "Chamana combina el encanto rústico de Argentina con la mística de Ibiza. Disfruta tapas, cócteles de hierbas y ropa artesanal en 'La Botica', celebrando tradiciones chamánicas."
+    },
+    "reservation": {
+      "title": "Reservas",
+      "description": "Reserva una mesa en Chamana y disfruta de la exquisita cocina argentina y el ambiente bohemio. Bienvenido a Chamana."
     }
   },
   "ErrorCard": {

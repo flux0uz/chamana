@@ -1,5 +1,41 @@
 import { siteConfig } from "@/config/site";
+import { Metadata } from "next";
 import { getLocale, getTranslations } from "next-intl/server";
+import { sendGTMEvent } from "@next/third-parties/google";
+
+export async function generateMetadata({
+  params: { locale },
+}: Readonly<{ params: { locale: string } }>): Promise<Metadata> {
+  const t = await getTranslations({ locale, namespace: "Metadata" });
+
+  return {
+    title: t("reservation.title"),
+    description: t("reservation.description"),
+    openGraph: {
+      title: `${t("reservation.title")} | ${siteConfig.name}`,
+      description: t("reservation.description"),
+      type: "website",
+      locale,
+      siteName: siteConfig.name,
+      url: `/${locale}/reservation`,
+      ...siteConfig.openGraphImage,
+    },
+    twitter: {
+      title: `${t("reservation.title")} | ${siteConfig.name}`,
+      description: t("reservation.description"),
+      card: "summary_large_image",
+      ...siteConfig.openGraphImage,
+    },
+    alternates: {
+      canonical: `/${locale}/reservation`,
+      languages: {
+        "x-default": "/es/reservation",
+        es: "/es/reservation",
+        en: "/en/reservation",
+      },
+    },
+  };
+}
 
 export default async function ReservationsPage() {
   const t = await getTranslations("Reservations");

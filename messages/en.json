@@ -5,6 +5,10 @@
     "about": {
       "title": "About",
       "description": "Chamana blends Argentina's rustic charm with Ibiza's allure. Enjoy tapas, herbal cocktails, and artisanal clothing at 'La Botica', celebrating shamanic traditions."
+    },
+    "reservation": {
+      "title": "Bookings",
+      "description": "Book a table at Chamana and enjoy exquisite Argentine cuisine and bohemian ambiance. Welcome to Chamana."
     }
   },
   "ErrorCard": {
