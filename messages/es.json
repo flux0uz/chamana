@@ -111,5 +111,14 @@
       "text": "En Chamana, estamos comprometidos con la sostenibilidad y la comunidad. Suministramos nuestros ingredientes de agricultores y productores locales, para apoyar la economía de la isla y asegurar un circuito corto. Al cenar en Chamana, no solo apoyas a un negocio local – te unes a un movimiento por el cambio positivo.",
       "cta": "Reservar una mesa"
     }
+  },
+  "Reservations": {
+    "title": "Reserva una mesa",
+    "groups": {
+      "title": "Grupos y Eventos",
+      "text": "Para grupos de 8 o más personas, póngase en contacto con nosotros directamente para hacer una reserva.",
+      "callCta": "Llámanos",
+      "emailCta": "Envíanos un email"
+    }
   }
 }

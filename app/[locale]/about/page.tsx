@@ -2,9 +2,9 @@ import Image from "next/image";
 import { Metadata } from "next";
 import { getLocale, getTranslations } from "next-intl/server";
 
+import { Link } from "@/navigation";
 import { siteConfig } from "@/config/site";
 import { Button } from "@/components/ui/button";
-import { BookModal } from "@/components/layout/book-modal";
 
 import kitchenImage from "@/public/images/kitchen.png";
 import sistersImage from "@/public/images/sisters.png";
@@ -129,13 +129,12 @@ export default async function Page() {
               </h2>
             </div>
             <p className="whitespace-pre-line text-lg">{t("sanctuary.text")}</p>
-            <BookModal
-              trigger={
-                <p className="w-fit cursor-pointer border-b-2 border-primary font-medium uppercase">
-                  {t("sanctuary.cta")}
-                </p>
-              }
-            />
+            <Link
+              href="/reservations"
+              className="w-fit cursor-pointer border-b-2 border-primary text-center font-medium uppercase md:text-xl"
+            >
+              {t("sanctuary.cta")}
+            </Link>
           </div>
           <Image
             alt="chamana sanctuary"
@@ -186,13 +185,12 @@ export default async function Page() {
             <p className="whitespace-pre-line text-lg">
               {t("commitment.text")}
             </p>
-            <BookModal
-              trigger={
-                <p className="w-fit cursor-pointer border-b-2 border-primary font-medium uppercase">
-                  {t("sanctuary.cta")}
-                </p>
-              }
-            />
+            <Link
+              href="/reservations"
+              className="w-fit cursor-pointer border-b-2 border-primary text-center font-medium uppercase md:text-xl"
+            >
+              {t("sanctuary.cta")}
+            </Link>
           </div>
         </div>
       </section>

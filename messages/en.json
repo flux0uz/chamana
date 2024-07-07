@@ -111,5 +111,14 @@
       "text": "At Chamana, we are committed to sustainability and community. We source our ingredients from local farmers and producers to support the island's economy and ensure a short supply chain. Dining at Chamana means supporting a local business and joining a movement for positive change.",
       "cta": "Reserve a table"
     }
+  },
+  "Reservations": {
+    "title": "Make your reservation",
+    "groups": {
+      "title": "Groups & Events",
+      "text": "For groups of 8 or more, please contact us directly to make a reservation.",
+      "callCta": "Call us",
+      "emailCta": "Email us"
+    }
   }
 }

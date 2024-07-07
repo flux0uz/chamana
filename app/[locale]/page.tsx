@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { getLocale, getTranslations } from "next-intl/server";
 
-import { BookModal } from "@/components/layout/book-modal";
+import { Link } from "@/navigation";
 import { Button } from "@/components/ui/button";
 
 import welcomeImage from "@/public/images/welcome.png";
@@ -194,13 +194,12 @@ export default async function Home() {
             </h2>
             <p className="text-lg md:text-xl">{t("book.text")}</p>
             <div className="flex items-center justify-center">
-              <BookModal
-                trigger={
-                  <p className="w-fit cursor-pointer border-b-2 border-primary text-center font-medium uppercase md:text-xl">
-                    {t("book.cta")}
-                  </p>
-                }
-              />
+              <Link
+                href="/reservations"
+                className="w-fit cursor-pointer border-b-2 border-primary text-center font-medium uppercase md:text-xl"
+              >
+                {t("book.cta")}
+              </Link>
             </div>
           </div>
         </div>

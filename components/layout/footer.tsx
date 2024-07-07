@@ -1,10 +1,10 @@
 import * as React from "react";
 import { useTranslations } from "next-intl";
-import { Clock, HourglassIcon, Mail, MapPin, Phone } from "lucide-react";
+import { Clock, Mail, MapPin, Phone } from "lucide-react";
 
-import { Separator } from "@/components/ui/separator";
-import { BookModal } from "@/components/layout/book-modal";
+import { Link } from "@/navigation";
 import { siteConfig } from "@/config/site";
+import { Separator } from "@/components/ui/separator";
 
 export function Footer() {
   const t = useTranslations("Footer");
@@ -69,13 +69,12 @@ export function Footer() {
             </div>
             <div className="w-full space-y-2 lg:w-1/4">
               <h6 className="font-bold uppercase">{t("reserve.title")}</h6>
-              <BookModal
-                trigger={
-                  <p className="w-fit cursor-pointer border-b-2 border-primary font-medium uppercase">
-                    {t("reserve.text")}
-                  </p>
-                }
-              />
+              <Link
+                href="/reservations"
+                className="w-fit cursor-pointer border-b-2 border-primary text-center font-medium uppercase md:text-xl"
+              >
+                {t("reserve.text")}
+              </Link>
             </div>
             <div className="w-full space-y-2 lg:w-1/4">
               <h6 className="font-bold uppercase">{t("follow")}</h6>

@@ -7,7 +7,6 @@ import { Link } from "@/navigation";
 import logo from "@/public/images/logo-chamana.png";
 
 import { HeaderLinks } from "@/components/layout/header-links";
-import { BookModal } from "@/components/layout/book-modal";
 import { Button } from "@/components/ui/button";
 import { LocaleSwitcher } from "../locale-switcher";
 
@@ -30,13 +29,14 @@ export function Header() {
           <HeaderLinks />
         </div>
         <div className="flex flex-1 items-center justify-between space-x-8 md:justify-end">
-          <BookModal
-            trigger={
-              <Button className="text-lg font-semibold uppercase">
-                {t("menu.book")}
-              </Button>
-            }
-          />
+          <Button asChild className="text-lg font-semibold uppercase">
+            <Link
+              href="/reservations"
+              className="w-fit cursor-pointer border-b-2 border-primary text-center font-medium uppercase md:text-xl"
+            >
+              {t("menu.book")}
+            </Link>
+          </Button>
           <LocaleSwitcher />
         </div>
       </div>

@@ -15,11 +15,10 @@ import { cn } from "@/lib/utils";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
-import { BookModal } from "@/components/layout/book-modal";
+import { LocaleSwitcher } from "@/components/locale-switcher";
+import { MenusAccordion } from "@/components/menus-accordion";
 
 import logo from "@/public/images/logo-chamana.png";
-import { LocaleSwitcher } from "../locale-switcher";
-import { MenusAccordion } from "../menus-accordion";
 
 export function MobileHeader() {
   const t = useTranslations("Header");
@@ -109,13 +108,12 @@ export function MobileHeader() {
 
               <MenusAccordion />
 
-              <BookModal
-                trigger={
-                  <p className="w-fit cursor-pointer border-b-2 border-primary text-lg font-semibold uppercase">
-                    {t("menu.book")}
-                  </p>
-                }
-              />
+              <Link
+                href="/reservations"
+                className="w-fit cursor-pointer border-b-2 border-primary text-center font-medium uppercase md:text-xl"
+              >
+                {t("menu.book")}
+              </Link>
             </div>
 
             <div className="flex items-center gap-3">
