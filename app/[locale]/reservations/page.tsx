@@ -1,7 +1,7 @@
 import { siteConfig } from "@/config/site";
 import { Metadata } from "next";
 import { getLocale, getTranslations } from "next-intl/server";
-import { sendGTMEvent } from "@next/third-parties/google";
+import { TableoIframe } from "@/components/layout/tableo-iframe";
 
 export async function generateMetadata({
   params: { locale },
@@ -51,13 +51,7 @@ export default async function ReservationsPage() {
 
       <section className="container">
         <div className="mx-auto max-w-4xl">
-          <iframe
-            title="Tableo booking widget"
-            src={`https://app.tableo.com/widget/chamana-ibiza-spain/?bgColor=%23ffffff&textColor=%23000000&googleFont=Raleway&fontSize=14&cornerStyle=none&textAlignment=left&formControlBgColor=%23ffffff&formControlColor=%23000000&formControlBorderColor=%23444444&formControlBorderShadow=0&formControlBorderWidth=1&formControlBorderOpacity=0.3&buttonBgColor=%237e6d5f&buttonTextColor=%23ffffff&language=${locale}`}
-            width="100%"
-            height=" 100%"
-            style={{ border: "none", minHeight: "700px" }}
-          />
+          <TableoIframe />
         </div>
       </section>
 

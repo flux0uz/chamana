@@ -12,21 +12,21 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 
-import sistersImage from "@/public/images/sisters.png";
-import boticaImage from "@/public/images/botica.png";
-import tapasImage from "@/public/images/tapas.png";
-import cocktailsImage from "@/public/images/cocktails.png";
-import vinosImage from "@/public/images/wines.png";
-import mateImage from "@/public/images/mate.png";
+import AndinaImage from "@/public/images/comida/chamana-cocktail-andina.png";
+import ChorizoImage from "@/public/images/comida/chamana-chorizo.png";
+import EmpanadasImage from "@/public/images/comida/chamana-empanadas.png";
+import LomitoImage from "@/public/images/comida/chamana-lomito.png";
+import CocktailImage from "@/public/images/comida/chamana-cocktail.png";
+import CarnesImage from "@/public/images/comida/chamana-tabla-carne.png";
 
 export function HomeCarousel() {
   const images = [
-    sistersImage,
-    boticaImage,
-    tapasImage,
-    cocktailsImage,
-    vinosImage,
-    mateImage,
+    ChorizoImage,
+    AndinaImage,
+    EmpanadasImage,
+    LomitoImage,
+    CocktailImage,
+    CarnesImage,
   ];
 
   return (
@@ -42,13 +42,15 @@ export function HomeCarousel() {
         {images.map((img, i) => (
           <CarouselItem
             key={i}
-            className="basis-full pl-2 md:basis-1/2 lg:basis-1/3"
+            className="basis-full pl-2 md:basis-1/2 lg:basis-1/4"
           >
             <Image
               src={img}
               quality={100}
+              width={400}
+              height={400}
               alt="Placeholder about"
-              className="object-cover"
+              className="aspect-square object-cover"
             />
           </CarouselItem>
         ))}

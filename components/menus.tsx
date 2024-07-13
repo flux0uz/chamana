@@ -41,13 +41,13 @@ export function Menus() {
                 title={t("menus.cocktails")}
                 className="w-fit cursor-pointer border-b-2 border-transparent font-medium hover:border-primary"
               />
-              {/* <ListItem
-                href={`/menus/chamana-vinos-${locale}.pdf`} //TODO: add file
+              <ListItem
+                href={`/menus/chamana-vinos-${locale}.pdf`}
                 target="_blank"
                 rel="noreferrer"
                 title={t("menus.wine")}
                 className="w-fit cursor-pointer border-b-2 border-transparent font-medium hover:border-primary"
-              /> */}
+              />
             </ul>
           </NavigationMenuContent>
         </NavigationMenuItem>

@@ -84,6 +84,7 @@ export default async function LocaleLayout({
     logo: absoluteUrl("/images/logo-chamana.png"),
     sameAs: siteConfig.socialLinks.map((link) => link.href),
     url: absoluteUrl(`/${locale}`),
+    image: absoluteUrl("/images/og.png"),
     address: {
       "@type": "PostalAddress",
       streetAddress: "Carrer Josep Lluis Sert 4",

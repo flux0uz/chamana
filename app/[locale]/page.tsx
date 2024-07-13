@@ -10,6 +10,7 @@ import mateImage from "@/public/images/mate.png";
 import tapasImage from "@/public/images/tapas.png";
 import cocktailsImage from "@/public/images/cocktails.png";
 import vinosImage from "@/public/images/wines.png";
+import { HomeCarousel } from "@/components/home-carousel";
 
 export default async function Home() {
   const t = await getTranslations("Home");
@@ -63,9 +64,9 @@ export default async function Home() {
         </div>
       </section>
 
-      {/* <section>
+      <section>
         <HomeCarousel />
-      </section> */}
+      </section>
 
       <div className="flex flex-col">
         <section className="w-full bg-secondary py-20 md:py-32 lg:py-40">
