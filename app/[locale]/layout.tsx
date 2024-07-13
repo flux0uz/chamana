@@ -3,6 +3,7 @@ import "../globals.css";
 import * as React from "react";
 import Script from "next/script";
 import type { Metadata } from "next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import { getMessages, getTranslations } from "next-intl/server";
 import { NextIntlClientProvider } from "next-intl";
 import { Organization, WithContext } from "schema-dts";
@@ -123,6 +124,7 @@ export default async function LocaleLayout({
         }}
       />
       <GoogleTagManager gtmId="GTM-K6SC72WQ" />
+      <SpeedInsights sampleRate={0.7} />
 
       <body>
         <NextIntlClientProvider messages={messages}>
