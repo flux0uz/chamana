@@ -110,7 +110,7 @@ export function MobileHeader() {
 
               <Link
                 href="/reservations"
-                className="w-fit cursor-pointer border-b-2 border-primary text-center font-medium uppercase md:text-xl"
+                className="w-fit cursor-pointer border-b-2 border-primary text-center text-xl font-semibold uppercase"
               >
                 {t("menu.book")}
               </Link>
