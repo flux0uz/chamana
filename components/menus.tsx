@@ -28,6 +28,13 @@ export function Menus() {
           <NavigationMenuContent>
             <ul className="flex w-[200px] flex-col gap-3 p-4">
               <ListItem
+                href={`/menus/chamana-fullmoon-carta-${locale}.pdf`}
+                target="_blank"
+                rel="noreferrer"
+                title={t("menus.fullmoon")}
+                className="w-fit cursor-pointer border-b-2 border-transparent font-medium hover:border-primary"
+              />
+              <ListItem
                 href={`/menus/chamana-carta-${locale}.pdf`}
                 target="_blank"
                 rel="noreferrer"

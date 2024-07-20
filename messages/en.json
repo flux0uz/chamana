@@ -26,6 +26,7 @@
       },
       "menus": {
         "title": "Menus",
+        "fullmoon": "Full Moon Menu",
         "menu": "Tapas",
         "cocktails": "Cocktails",
         "wine": "Wine"
