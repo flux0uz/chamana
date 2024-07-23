@@ -21,14 +21,6 @@ export function MenusAccordion() {
         </AccordionTrigger>
         <AccordionContent className="flex flex-col gap-1 pb-0">
           <a
-            href={`/menus/chamana-fullmoon-carta-${locale}.pdf`}
-            target="_blank"
-            rel="noreferrer"
-            className="w-fit text-lg font-medium"
-          >
-            {t("menu.menus.fullmoon")}
-          </a>
-          <a
             href={`/menus/chamana-carta-${locale}.pdf`}
             target="_blank"
             rel="noreferrer"
