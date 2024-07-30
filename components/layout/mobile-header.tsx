@@ -88,7 +88,7 @@ export function MobileHeader() {
               </MobileLink>
             </div>
 
-            <div className="my-12 flex flex-col space-y-3">
+            <div className="my-8 flex flex-col space-y-3">
               {siteConfig.navLinks?.map(
                 (link) =>
                   link.href && (
@@ -115,7 +115,7 @@ export function MobileHeader() {
               </Link>
             </div>
 
-            <div className="mb-12">
+            <div className="mb-8">
               <LocaleSwitcher className="text-xl uppercase" />
             </div>
 
@@ -133,7 +133,7 @@ export function MobileHeader() {
               ))}
             </div>
 
-            <Separator className="my-12" />
+            <Separator className="my-8" />
 
             <div className="space-y-4">
               <div className="flex items-center gap-2">
