@@ -86,7 +86,6 @@ export function MobileHeader() {
                   className="h-auto w-44"
                 />
               </MobileLink>
-              <LocaleSwitcher />
             </div>
 
             <div className="my-12 flex flex-col space-y-3">
@@ -114,6 +113,10 @@ export function MobileHeader() {
               >
                 {t("menu.book")}
               </Link>
+            </div>
+
+            <div className="mb-12">
+              <LocaleSwitcher className="text-xl uppercase" />
             </div>
 
             <div className="flex items-center gap-3">

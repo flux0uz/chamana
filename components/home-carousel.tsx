@@ -38,11 +38,11 @@ export function HomeCarousel() {
       }}
       plugins={[Autoplay()]}
     >
-      <CarouselContent className="-ml-2">
+      <CarouselContent className="sm:-ml-2">
         {images.map((img, i) => (
           <CarouselItem
             key={i}
-            className="basis-full pl-2 md:basis-1/2 lg:basis-1/4"
+            className="basis-full sm:pl-2 md:basis-1/2 lg:basis-1/3"
           >
             <Image
               src={img}
@@ -50,7 +50,7 @@ export function HomeCarousel() {
               width={400}
               height={400}
               alt="Placeholder about"
-              className="aspect-square object-cover"
+              className="w-full object-cover sm:aspect-square"
             />
           </CarouselItem>
         ))}

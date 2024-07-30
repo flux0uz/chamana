@@ -20,7 +20,7 @@
     "menu": {
       "home": "Inicio",
       "about": "Sobre Chamana",
-      "book": "Reserva una mesa",
+      "book": "Reserva ahora",
       "openingHours": {
         "text": "Miercoles a domingo, de 18:00 a 02:00"
       },
@@ -45,7 +45,7 @@
     "email": "Email",
     "reserve": {
       "title": "Reserva",
-      "text": "Reserva una mesa"
+      "text": "Reserva ahora"
     },
     "follow": "Síguenos",
     "rights": "Todos los derechos reservados"
@@ -82,7 +82,7 @@
     "book": {
       "title": "Reserva una mesa en Chamana",
       "text": "Experimente nuestra exquisita cocina argentina y el ambiente bohemio. Reserve hoy mismo una mesa en Chamana.",
-      "cta": "Reservar una mesa"
+      "cta": "Reservar ahora"
     }
   },
   "About": {
@@ -102,7 +102,7 @@
       "subTitle": "Un santuario para el alma",
       "title": "Relájate y recarga en Chamana",
       "text": "Sumérgete en Chamana, donde la tranquilidad y la inspiración se entrelazan en un abrazo armonioso. Chamana no es solo un restaurante y boutique; es un santuario para el alma. Diseñado con una decoración rústica, artesanias y un jardín exuberante, cada rincón de nuestro espacio invita a la reflexión y la renovación.\n\nAdemás, en Chamana celebramos la espiritualidad y la vida holística a través de talleres y eventos que honran las tradiciones ancestrales. Ya sea que busques un lugar para relajarte o recargar energías, Chamana te espera con los brazos abiertos",
-      "cta": "Reservar una mesa"
+      "cta": "Reservar ahora"
     },
     "boutique": {
       "subTitle": "La Botica",
@@ -113,11 +113,11 @@
       "subTitle": "Nuestro compromiso",
       "title": "Comprometidos con la sostenibilidad y la comunidad",
       "text": "En Chamana, estamos comprometidos con la sostenibilidad y la comunidad. Suministramos nuestros ingredientes de agricultores y productores locales, para apoyar la economía de la isla y asegurar un circuito corto. Al cenar en Chamana, no solo apoyas a un negocio local – te unes a un movimiento por el cambio positivo.",
-      "cta": "Reservar una mesa"
+      "cta": "Reservar ahora"
     }
   },
   "Reservations": {
-    "title": "Reserva una mesa",
+    "title": "Reserva ahora",
     "groups": {
       "title": "Grupos y Eventos",
       "text": "Para grupos de 8 o más personas, póngase en contacto con nosotros directamente para hacer una reserva.",

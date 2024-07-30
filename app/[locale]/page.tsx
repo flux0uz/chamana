@@ -34,9 +34,14 @@ export default async function Home() {
         />
         <div className="absolute inset-0 z-10 bg-secondary" />
         <div className="absolute inset-0 z-20 mx-auto flex max-w-4xl items-center justify-center px-6">
-          <h1 className="text-center text-4xl text-white sm:text-5xl md:text-6xl">
-            {t("tagline")}
-          </h1>
+          <div className="flex flex-col items-center space-y-4">
+            <h1 className="text-center text-4xl text-white sm:text-5xl md:text-6xl">
+              {t("tagline")}
+            </h1>
+            <Button asChild className="text-xl font-bold uppercase" size="lg">
+              <Link href="/reservations">{t("book.cta")}</Link>
+            </Button>
+          </div>
         </div>
       </header>
 
@@ -62,10 +67,6 @@ export default async function Home() {
             className="overflow-hidden"
           />
         </div>
-      </section>
-
-      <section>
-        <HomeCarousel />
       </section>
 
       <div className="flex flex-col">
@@ -185,6 +186,10 @@ export default async function Home() {
           </div>
         </section>
       </div>
+
+      <section className="w-full pb-20 md:pb-32 lg:pb-40">
+        <HomeCarousel />
+      </section>
 
       <section className="relative w-full bg-secondary bg-center py-12 md:py-24 lg:py-32">
         <div className="absolute inset-0 bg-black opacity-30" />

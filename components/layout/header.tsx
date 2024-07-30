@@ -29,6 +29,7 @@ export function Header() {
           <HeaderLinks />
         </div>
         <div className="flex flex-1 items-center justify-between space-x-8 md:justify-end">
+          <LocaleSwitcher />
           <Button asChild className="text-lg font-semibold uppercase">
             <Link
               href="/reservations"
@@ -37,7 +38,6 @@ export function Header() {
               {t("menu.book")}
             </Link>
           </Button>
-          <LocaleSwitcher />
         </div>
       </div>
     </header>

@@ -20,7 +20,7 @@
     "menu": {
       "home": "Home",
       "about": "About",
-      "book": "Book a table",
+      "book": "Book now",
       "openingHours": {
         "text": "Wednesday to Sunday, 18:00 to 02:00"
       },
@@ -33,7 +33,7 @@
     }
   },
   "BookModal": {
-    "title": "Book a table"
+    "title": "Book now"
   },
   "Footer": {
     "address": "Address",
@@ -45,7 +45,7 @@
     "email": "Email",
     "reserve": {
       "title": "Reserve",
-      "text": "Reserve a table"
+      "text": "Book now"
     },
     "follow": "Follow us",
     "rights": "All rights reserved"
@@ -80,9 +80,9 @@
       "text": "At Chamana, we invite you to immerse yourself in a tradition that unites hearts and celebrates friendship. Mate, a sacred infusion in Argentina, is made with yerba mate leaves and hot water, creating a drink that is both social and ritualistic. More than just a beverage, mate is a symbol of hospitality and camaraderie, shared in a circle to strengthen bonds. Our space offers an authentic mate experience with exclusive artisanal blends crafted by Chamana, featuring organic Argentine yerba mate mixed with local herbs, flowers, fruits, and spices. Discover this ancient ritual, letting its rich flavors and history envelop you with each sip."
     },
     "book": {
-      "title": "Reserve a table",
-      "text": "Experience our exquisite Argentine cuisine and bohemian ambiance. Reserve a table at Chamana today.",
-      "cta": "Reserve now"
+      "title": "Book a table",
+      "text": "Experience our exquisite Argentine cuisine and bohemian ambiance. Book a table at Chamana today.",
+      "cta": "Book now"
     }
   },
   "About": {
@@ -102,7 +102,7 @@
       "subTitle": "A Sanctuary for the soul",
       "title": "Relax and Recharge at Chamana",
       "text": "Immerse yourself in Chamana, where tranquility and inspiration intertwine in a harmonious embrace. Chamana is not just a restaurant and boutique; it is a sanctuary for the soul. Designed with rustic décor, handcrafted items, and a lush garden, every corner of our space invites reflection and renewal. At Chamana, we also celebrate spirituality and holistic living through workshops and events that honor ancestral traditions. Whether you're seeking a place to relax or recharge, Chamana awaits you with open arms.",
-      "cta": "Reserve a table"
+      "cta": "Book now"
     },
     "boutique": {
       "subTitle": "La Botica",
@@ -113,7 +113,7 @@
       "subTitle": "Our commitment",
       "title": "Dedicated to Sustainability and Community",
       "text": "At Chamana, we are committed to sustainability and community. We source our ingredients from local farmers and producers to support the island's economy and ensure a short supply chain. Dining at Chamana means supporting a local business and joining a movement for positive change.",
-      "cta": "Reserve a table"
+      "cta": "Book now"
     }
   },
   "Reservations": {

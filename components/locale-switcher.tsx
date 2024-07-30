@@ -4,8 +4,13 @@ import * as React from "react";
 import clsx from "clsx";
 import { Link, locales, usePathname } from "@/navigation";
 import { useLocale } from "next-intl";
+import { cn } from "@/lib/utils";
 
-export function LocaleSwitcher() {
+interface ILocaleSwitcherProps {
+  className?: string;
+}
+
+export function LocaleSwitcher({ className }: ILocaleSwitcherProps) {
   const pathname = usePathname();
   const locale = useLocale();
 
@@ -14,14 +19,15 @@ export function LocaleSwitcher() {
       {locales.map((loc, i) => (
         <React.Fragment key={loc}>
           <Link
-            className={clsx("text-lg uppercase", {
-              "font-bold text-primary": loc === locale,
-              "font-semibold text-muted hover:text-primary": loc !== locale,
+            className={cn("text-lg", className, {
+              "border-b-2 border-primary font-semibold text-primary":
+                loc === locale,
+              "font-medium text-muted hover:text-primary": loc !== locale,
             })}
             href={pathname}
             locale={loc}
           >
-            {loc}
+            {loc === "en" ? "English" : "Español"}
           </Link>
           <span>{i < locales.length - 1 && "|"}</span>
         </React.Fragment>
