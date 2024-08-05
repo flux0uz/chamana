@@ -2,13 +2,11 @@ import Image from "next/image";
 import { Metadata } from "next";
 import { getLocale, getTranslations } from "next-intl/server";
 
-import { Link } from "@/navigation";
 import { siteConfig } from "@/config/site";
 import { Button } from "@/components/ui/button";
 
 import kitchenImage from "@/public/images/kitchen.png";
 import sistersImage from "@/public/images/sisters.png";
-import sanctuaryImage from "@/public/images/sanctuary.png";
 import boticaImage from "@/public/images/botica.png";
 
 export async function generateMetadata({
@@ -20,7 +18,7 @@ export async function generateMetadata({
     title: t("about.title"),
     description: t("about.description"),
     openGraph: {
-      title: `${t("about.title")} | ${siteConfig.name}`,
+      title: `${siteConfig.name} | ${t("about.title")}`,
       description: t("about.description"),
       type: "website",
       locale,
@@ -29,7 +27,7 @@ export async function generateMetadata({
       ...siteConfig.openGraphImage,
     },
     twitter: {
-      title: `${t("about.title")} | ${siteConfig.name}`,
+      title: `${siteConfig.name} | ${t("about.title")}`,
       description: t("about.description"),
       card: "summary_large_image",
       ...siteConfig.openGraphImage,
@@ -57,7 +55,7 @@ export default async function Page() {
         </h1>
       </section>
 
-      <section className="pb-20 pt-10 md:pb-32 md:pt-20 lg:pb-40 lg:pt-24">
+      <section className="bg-secondary pb-20 pt-10 md:pb-32 md:pt-20 lg:pb-40 lg:pt-24">
         <div className="container max-w-3xl text-center">
           <div className="flex w-full flex-col items-center justify-center gap-8 space-y-2">
             <div>
@@ -69,22 +67,22 @@ export default async function Page() {
               </h2>
             </div>
             <Image
-              alt="founder sisters"
+              alt="Chamana sisters"
               src={sistersImage}
               priority
-              width={500}
-              height={500}
+              width={400}
+              height={400}
               placeholder="blur"
               className="rounded-sm object-cover"
             />
-            <p className="whitespace-pre-line text-pretty text-lg">
+            <p className="whitespace-pre-line text-pretty text-xl">
               {t("story.text")}
             </p>
           </div>
         </div>
       </section>
 
-      <section className="bg-secondary py-20 md:py-32 lg:py-40">
+      <section className="py-20 md:py-32 lg:py-40">
         <div className="container flex flex-col items-center gap-8 lg:flex-row lg:justify-between lg:gap-14">
           <Image
             alt="our tapas"
@@ -97,66 +95,28 @@ export default async function Page() {
           <div className="w-full space-y-2 lg:w-1/2">
             <div>
               <span className="text-lg font-semibold uppercase text-muted">
-                {t("culinary.subTitle")}
+                {t("filosofía.subTitle")}
               </span>
               <h2 className="text-3xl font-bold sm:text-4xl md:text-5xl">
-                {t("culinary.title")}
+                {t("filosofía.title")}
               </h2>
             </div>
-            <p className="whitespace-pre-line text-lg">{t("culinary.text")}</p>
+            <p className="whitespace-pre-line text-xl">{t("filosofía.text")}</p>
             <Button variant="link" size="none" asChild>
               <a
                 href={`/menus/chamana-carta-${locale}.pdf`}
                 target="_blank"
                 rel="noreferrer"
               >
-                {t("culinary.cta")}
+                {t("filosofía.cta")}
               </a>
             </Button>
           </div>
         </div>
       </section>
 
-      <section className="py-20 md:py-32 lg:py-40">
-        <div className="container flex flex-col items-center gap-8 lg:flex-row lg:justify-between lg:gap-14">
-          <div className="w-full space-y-2 lg:w-1/2">
-            <div>
-              <span className="text-lg font-semibold uppercase text-muted">
-                {t("sanctuary.subTitle")}
-              </span>
-              <h2 className="text-3xl font-bold sm:text-4xl md:text-5xl">
-                {t("sanctuary.title")}
-              </h2>
-            </div>
-            <p className="whitespace-pre-line text-lg">{t("sanctuary.text")}</p>
-            <Link
-              href="/reservations"
-              className="w-fit cursor-pointer border-b-2 border-primary text-center font-medium uppercase md:text-xl"
-            >
-              {t("sanctuary.cta")}
-            </Link>
-          </div>
-          <Image
-            alt="chamana sanctuary"
-            src={sanctuaryImage}
-            width={500}
-            height={500}
-            placeholder="blur"
-            className="rounded-sm object-cover"
-          />
-        </div>
-      </section>
-
       <section className="bg-secondary py-20 md:py-32 lg:py-40">
         <div className="container flex flex-col items-center gap-8 lg:flex-row lg:justify-between lg:gap-14">
-          <Image
-            alt="the botica"
-            src={boticaImage}
-            width={500}
-            height={500}
-            placeholder="blur"
-            className="rounded-sm object-cover"
-          />
           <div className="w-full space-y-2 lg:w-1/2">
             <div>
               <span className="text-lg font-semibold uppercase text-muted">
@@ -166,32 +126,16 @@ export default async function Page() {
                 {t("boutique.title")}
               </h2>
             </div>
-            <p className="whitespace-pre-line text-lg">{t("boutique.text")}</p>
+            <p className="whitespace-pre-line text-xl">{t("boutique.text")}</p>
           </div>
-        </div>
-      </section>
-
-      <section className="py-20 md:py-32 lg:py-40">
-        <div className="container max-w-3xl text-center">
-          <div className="flex w-full flex-col items-center justify-center gap-8 space-y-2">
-            <div>
-              <span className="text-lg font-semibold uppercase text-muted">
-                {t("commitment.subTitle")}
-              </span>
-              <h2 className="text-3xl font-bold sm:text-4xl md:text-5xl">
-                {t("commitment.title")}
-              </h2>
-            </div>
-            <p className="whitespace-pre-line text-lg">
-              {t("commitment.text")}
-            </p>
-            <Link
-              href="/reservations"
-              className="w-fit cursor-pointer border-b-2 border-primary text-center font-medium uppercase md:text-xl"
-            >
-              {t("sanctuary.cta")}
-            </Link>
-          </div>
+          <Image
+            alt="the botica"
+            src={boticaImage}
+            width={500}
+            height={500}
+            placeholder="blur"
+            className="rounded-sm object-cover"
+          />
         </div>
       </section>
     </div>

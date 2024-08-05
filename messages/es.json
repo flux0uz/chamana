@@ -1,14 +1,14 @@
 {
   "Metadata": {
-    "title": "Inicio",
-    "description": "Chamana, de dos hermanas argentinas, fusiona las tradiciones culinarias de Argentina con el espíritu bohemio de Ibiza. Un tributo a su herencia chamánica y la energía mística de la isla",
+    "title": "Playa d'en Bossa",
+    "description": "Chamana Ibiza ofrece las mejores tapas argentinas y cócteles a base de hierbas de Playa d'en Bossa. ¡Reserve hoy mismo una mesa en esta joya escondida!",
     "about": {
-      "title": "Sobre Chamana",
-      "description": "Chamana combina el encanto rústico de Argentina con la mística de Ibiza. Disfruta tapas, cócteles de hierbas y ropa artesanal en 'La Botica', celebrando tradiciones chamánicas."
+      "title": "Nuestra historia",
+      "description": "Chamana Ibiza ofrece las mejores tapas argentinas y cócteles a base de hierbas de Playa d'en Bossa. ¡Reserve hoy mismo una mesa en esta joya escondida!"
     },
     "reservation": {
       "title": "Reservas",
-      "description": "Reserva una mesa en Chamana y disfruta de la exquisita cocina argentina y el ambiente bohemio. Bienvenido a Chamana."
+      "description": "Chamana Ibiza ofrece las mejores tapas argentinas y cócteles a base de hierbas de Playa d'en Bossa. ¡Reserve hoy mismo una mesa en esta joya escondida!"
     }
   },
   "ErrorCard": {
@@ -32,9 +32,6 @@
       }
     }
   },
-  "BookModal": {
-    "title": "Reserva una mesa"
-  },
   "Footer": {
     "address": "Dirección",
     "openingHours": {
@@ -51,73 +48,45 @@
     "rights": "Todos los derechos reservados"
   },
   "Home": {
-    "tagline": "Un refugio donde Argentina abraza la esencia de Ibiza",
+    "tagline": "Vive la Esencia de Argentina en Ibiza",
     "about": {
-      "subTitle": "Sobre Chamana",
       "title": "Bienvenido a Chamana.",
-      "text": "Sumérgete en Chamana, un refugio donde el alma de Argentina se entrelaza con la magia de Ibiza. Chamana es un santuario que evoca la elegancia rústica argentina y el misticismo ibicenco. Creado por dos hermanas argentinas, nuestro espacio celebra la espiritualidad ancestral y el arte nativo de los Andes. Saborea tapas de carne argentina de primera calidad, déjate seducir por cócteles herbales con ingredientes locales y sagrados, y descubre tesoros artesanales en La Botica, con piezas únicas y accesorios hechos a mano."
+      "text": "Fundado por dos hermanas de Argentina, Chamana fusiona la rica herencia culinaria de su país con el encanto místico de Ibiza.\nNuestro concepto único combina tapas argentinas auténticas, exquisitos cócteles herbales y una boutique que ofrece tejidos artesanales.\n\nUbicado en Playa d'en Bossa, Chamana es tu joya escondida para una experiencia gastronómica memorable."
     },
-    "tapas": {
-      "subTitle": "Carta de tapas",
-      "title": "Embárcate en un viaje culinario donde Argentina y Ibiza se encuentran",
-      "text": "Nuestra carta de tapas celebra la esencia de la cocina argentina, fusionando recetas tradicionales con verduras orgánicas y ingredientes de primera calidad. Desde las empanadas hasta el choripán, cada plato es una obra de amor, elaborado con ingredientes frescos y de origen local. Disfruta de tus tapas con una copa de Malbec o un cóctel herbal, déjate transportar y siente cómo Argentina cobra vida en el corazón de Ibiza.",
-      "cta": "Ver carta de tapas"
-    },
-    "cocktails": {
-      "subTitle": "Carta de cócteles",
-      "title": "Cócteles de Autor de hierbas andinas y de la región",
-      "text": "Nuestros cócteles de autor son una celebración de la naturaleza y la tradición. Cada sorbo es una invitación a explorar el poder curativo de las hierbas y plantas. Desde “Chamana” – una mezcla armoniosa de yerba mate, ginebra y limón – hasta el “Pachamama” – una fusión vibrante de hoja de mate coca, pisco y lima – cada cóctel rinde homenaje a la energía mística de la isla y la herencia espiritual de las hermanas.\n\nPara aquellos que prefieren opciones sin alcohol, ofrecemos cócteles elaborados con frutas y hierbas frescas, diseñados para refrescar y revitalizar el espíritu.",
-      "cta": "Ver carta de cócteles"
-    },
-    "wine": {
-      "subTitle": "Carta de vinos",
-      "title": "Exquisitos Vinos de Argentina y más allá",
-      "text": "En Chamana, te invitamos a descubrir nuestra selecta colección de vinos argentinos y franceses, cada uno elegido por su excepcional calidad y carácter distintivo. Desde los intensos Malbecs de nuestra tierra natal hasta los frescos blancos franceses, cada copa es un tributo a los viñedos y las manos que los cultivan. Brinda por la tradición y deléitate con el auténtico sabor del terruño argentino y el encanto vinícola de tierras lejanas."
-    },
-    "mate": {
-      "subTitle": "El mate",
-      "title": "El Ritual del Mate: Un Vínculo Ancestral",
-      "text": "En Chamana, te invitamos a sumergirte en la esencia de una tradición que une corazones y celebra la amistad. El mate, una infusión sagrada en Argentina, se elabora con hojas de yerba mate y agua caliente, creando una bebida que es tanto social como ritual. Más que una simple bebida, el mate es un símbolo de hospitalidad y camaradería, compartido en círculo para fortalecer los lazos.\n\nNuestro espacio te ofrece una auténtica experiencia de mate con exclusivos blends artesanales elaborados por Chamana con yerba argentina orgánica y mezclas de hierbas, flores, frutas y especias locales. Descubre este ritual ancestral, dejándote llevar por sus ricos sabores y la historia que encierran cada sorbo."
+    "menu": {
+      "title": "Un viaje culinario",
+      "text": "Disfruta de nuestra variada selección de tapas argentinas, elaboradas con los mejores ingredientes.\nDesde carnes suculentas hasta productos orgánicos frescos, nuestros platos están diseñados para deleitar tus sentidos.\nComplementa tu comida con nuestros cócteles herbales exclusivos, meticulosamente preparados para ofrecer una experiencia sensorial única.",
+      "ctaMenu": "Comida",
+      "ctaVinos": "Vinos",
+      "ctaCocktails": "Cocteles"
     },
     "book": {
-      "title": "Reserva una mesa en Chamana",
-      "text": "Experimente nuestra exquisita cocina argentina y el ambiente bohemio. Reserve hoy mismo una mesa en Chamana.",
-      "cta": "Reservar ahora"
+      "title": "Reserva una mesa",
+      "text": "¿Listo para experimentar Chamana? Reserva tu mesa ahora y embárcate en un viaje culinario a través de Argentina en el corazón de Ibiza.\nYa sea que busques una cena íntima o una comida de celebración, esperamos darte la bienvenida.",
+      "cta": "Reservas"
     }
   },
   "About": {
-    "title": "Sobre Chamana",
+    "title": "Chamana - La joya escondida de Playa d'en Bossa, ofreciendo una mezcla inigualable de tapas argentinas auténticas y cócteles artesanales herbales en un ambiente sereno y espiritual.",
     "story": {
-      "subTitle": "Nuestra historia",
-      "title": "Un tributo a la herencia argentina y la energía de Ibiza",
-      "text": "Chamana es el sueño hecho realidad de dos hermanas argentinas, unidas por una pasión compartida por las tradiciones culinarias de su tierra natal y el espíritu libre de Ibiza. En su búsqueda por crear un espacio que encarne su herencia cultural y amor por la isla, nació Chamana. Este restaurante y boutique no solo rinden homenaje a sus raíces, sino que también capturan la energía mística y vibrante de Ibiza.\n\nUna de las hermanas es diseñadora de indumentaria y tiene su propia marca artesanal, colaborando con artesanos de comunidades autóctonas de Argentina. Así nació 'La Botica', un rincón dentro del restaurante donde se venden ropa y accesorios artesanales de Argentina y del mundo. La otra hermana, farmacéutica homeópata de carrera, siempre ha estado creando preparados. Desde muy pequeñas, crecieron en el ambiente de bares y gastronomía, heredando de sus padres el amor por este mundo.\n\nChamana no es solo un lugar para comer y beber, es un viaje sensorial donde cada detalle está pensado para despertar la curiosidad y conectar con la esencia de la naturaleza y la espiritualidad. Bienvenidos a Chamana, donde Argentina e Ibiza se encuentran en un abrazo eterno."
+      "subTitle": "Nuestro Viaje: De Argentina a Ibiza",
+      "title": "Dos Hermanas, Una Visión, Una Experiencia Única",
+      "text": "Chamana fue fundada por dos hermanas argentinas con una visión clara: traer los sabores y la espiritualidad de su tierra natal a las costas de Ibiza.\nUna de ellas, con una sólida trayectoria en el negocio de la restauración, y la otra, con una marca propia de moda, decidieron fusionar sus mundos para crear un lugar único.\nEn Chamana, encontrarás las mejores tapas auténticas argentinas, exquisitos cócteles herbales y una boutique con tejidos artesanales de Argentina y de todo el mundo.\nMás que un restaurante, Chamana es una experiencia sensorial completa."
     },
-    "culinary": {
-      "subTitle": "Cocina argentina en Ibiza",
-      "title": "Un Viaje Culinario Inolvidable",
-      "text": "En Chamana, te invitamos a embarcarte en un viaje culinario que fusiona la esencia de Argentina con la frescura vibrante de Ibiza. Nuestra carta de tapas, confeccionada con ingredientes locales y de temporada, es un tributo a la calidad y el sabor auténtico.\n\nEn nuestro bar, cada cóctel de hierbas y vino regional es una obra de arte, diseñada para complementar nuestros exquisitos platos. Descubre la magia de la cocina argentina en el corazón místico de Ibiza.",
-      "cta": "Ver carta de tapas"
-    },
-    "sanctuary": {
-      "subTitle": "Un santuario para el alma",
-      "title": "Relájate y recarga en Chamana",
-      "text": "Sumérgete en Chamana, donde la tranquilidad y la inspiración se entrelazan en un abrazo armonioso. Chamana no es solo un restaurante y boutique; es un santuario para el alma. Diseñado con una decoración rústica, artesanias y un jardín exuberante, cada rincón de nuestro espacio invita a la reflexión y la renovación.\n\nAdemás, en Chamana celebramos la espiritualidad y la vida holística a través de talleres y eventos que honran las tradiciones ancestrales. Ya sea que busques un lugar para relajarte o recargar energías, Chamana te espera con los brazos abiertos",
-      "cta": "Reservar ahora"
+    "filosofía": {
+      "subTitle": "Filosofía Chamana",
+      "title": "Tradición y Modernidad",
+      "text": "En Chamana, creemos en la fusión de lo tradicional con lo moderno, lo espiritual con lo terrenal.\nNuestro enfoque está en ofrecer una experiencia gastronómica auténtica y memorable, utilizando ingredientes de la más alta calidad y técnicas culinarias tradicionales.\nCada plato, cada cóctel, y cada artículo en nuestra boutique es una celebración de la cultura argentina y la vibrante energía de Ibiza.\nSomos el mejor restaurante de tapas en Playa d'en Bossa, reconocido por nuestra atención al detalle y nuestro ambiente acogedor.",
+      "cta": "Ver carta"
     },
     "boutique": {
-      "subTitle": "La Botica",
-      "title": "Moda y belleza artesanal",
-      "text": "En La Botica, nuestra encantadora boutique donde la moda y la artesanía se encuentran en perfecta armonía. Este espacio ha sido creado por la hermana diseñadora con su propia marca, un homenaje a la belleza y el arte.\n\nAquí descubrirás piezas de edición limitada de su propia marca Meune que combinan textiles artesanales de las comunidades indígenas argentinas con diseños contemporáneos. Cada pieza es una joya única, cuidadosamente seleccionada y elaborada con los mejores materiales: lino, algodón, seda y lana.\n\nAdemás de su marca exclusiva, nuestra diseñadora ofrece una selección curada de tesoros artesanales del mundo, desde intrincadas joyas hasta accesorios únicos, todos hechos a mano por artesanos expertos.\n\nExplora este refugio de elegancia y autenticidad, donde cada detalle cuenta una historia y cada pieza te invita a un viaje de descubrimiento."
-    },
-    "commitment": {
-      "subTitle": "Nuestro compromiso",
-      "title": "Comprometidos con la sostenibilidad y la comunidad",
-      "text": "En Chamana, estamos comprometidos con la sostenibilidad y la comunidad. Suministramos nuestros ingredientes de agricultores y productores locales, para apoyar la economía de la isla y asegurar un circuito corto. Al cenar en Chamana, no solo apoyas a un negocio local – te unes a un movimiento por el cambio positivo.",
-      "cta": "Reservar ahora"
+      "subTitle": "Moda artesanal",
+      "title": "La Botica",
+      "text": "Nuestra boutique ofrece una selección de tejidos artesanales de Argentina y de todo el mundo.\nCada pieza es única y representa la artesanía y la tradición de diferentes culturas.\nDesde mantas tejidas a mano hasta ropa y accesorios, nuestra boutique es una extensión de la experiencia Chamana, donde la calidad y la autenticidad son primordiales.\nVisítanos en Playa d'en Bossa para descubrir productos artesanales únicos."
     }
   },
   "Reservations": {
-    "title": "Reserva ahora",
+    "title": "Hacer una reserva",
     "groups": {
       "title": "Grupos y Eventos",
       "text": "Para grupos de 8 o más personas, póngase en contacto con nosotros directamente para hacer una reserva.",

@@ -22,11 +22,11 @@ export function Menus() {
     <NavigationMenu>
       <NavigationMenuList>
         <NavigationMenuItem>
-          <NavigationMenuTrigger className="text-lg font-semibold uppercase">
+          <NavigationMenuTrigger className="text-xl font-semibold uppercase text-white transition-colors">
             {t("menus.title")}
           </NavigationMenuTrigger>
           <NavigationMenuContent>
-            <ul className="flex w-[200px] flex-col gap-3 p-4">
+            <ul className="flex w-[200px] flex-col gap-1 p-4">
               <ListItem
                 href={`/menus/chamana-carta-${locale}.pdf`}
                 target="_blank"
@@ -71,7 +71,7 @@ const ListItem = React.forwardRef<
           )}
           {...props}
         >
-          <div className="text-foreground/60 transition-colors hover:text-foreground/80">
+          <div className="text-lg text-foreground/60 transition-colors hover:text-foreground/80">
             {title}
           </div>
           <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">

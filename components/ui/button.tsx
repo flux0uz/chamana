@@ -3,6 +3,7 @@ import { Slot } from "@radix-ui/react-slot";
 import { cva, type VariantProps } from "class-variance-authority";
 
 import { cn } from "@/lib/utils";
+import { ChevronRight } from "lucide-react";
 
 const buttonVariants = cva(
   "inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50",
@@ -17,12 +18,12 @@ const buttonVariants = cva(
         secondary:
           "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
-        link: "border-b-2 border-primary text-base uppercase text-foreground",
+        link: "border-b-2 border-primary text-xl uppercase text-foreground",
       },
       size: {
         default: "h-10 px-4 py-2",
         sm: "h-9 px-3",
-        lg: "h-11 px-8",
+        lg: "h-12 px-6",
         icon: "h-10 w-10",
         none: "h-auto rounded-none px-0",
       },
@@ -48,7 +49,14 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
         className={cn(buttonVariants({ variant, size, className }))}
         ref={ref}
         {...props}
-      />
+      >
+        <div>
+          {props.children}
+          {variant === "link" && (
+            <ChevronRight className="ml-1 h-4 w-4 opacity-60" />
+          )}
+        </div>
+      </Comp>
     );
   },
 );

@@ -4,7 +4,7 @@ import { Facebook } from "@/components/icons/facebook";
 import { Instagram } from "@/components/icons/instagram";
 
 export const siteConfig = {
-  name: "Chamana Ibiza",
+  name: "Chamana Restaurant Ibiza",
   shortName: "Chamana",
   phoneNumber: "+34662318408",
   email: "reservations@chamanaibiza.com",

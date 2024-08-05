@@ -12,21 +12,21 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 
-import AndinaImage from "@/public/images/comida/chamana-cocktail-andina.png";
-import ChorizoImage from "@/public/images/comida/chamana-chorizo.png";
-import EmpanadasImage from "@/public/images/comida/chamana-empanadas.png";
-import LomitoImage from "@/public/images/comida/chamana-lomito.png";
-import CocktailImage from "@/public/images/comida/chamana-cocktail.png";
-import CarnesImage from "@/public/images/comida/chamana-tabla-carne.png";
+import clientesImg from "@/public/images/ambiente/chamana-clientes.png";
+import terrazaImg from "@/public/images/ambiente/chamana-terraza.png";
+import clienteBoticaImg3 from "@/public/images/ambiente/chamana-cliente-botica.png";
+import ambienteImg from "@/public/images/ambiente/chamana-ambiente.png";
+import boticaImg from "@/public/images/ambiente/chamana-botica.png";
+import clienteImg3 from "@/public/images/ambiente/chamana-cliente-3.png";
 
-export function HomeCarousel() {
+export function AmbianceCarousel() {
   const images = [
-    ChorizoImage,
-    AndinaImage,
-    EmpanadasImage,
-    LomitoImage,
-    CocktailImage,
-    CarnesImage,
+    boticaImg,
+    terrazaImg,
+    clienteImg3,
+    clientesImg,
+    ambienteImg,
+    clienteBoticaImg3,
   ];
 
   return (
@@ -38,11 +38,11 @@ export function HomeCarousel() {
       }}
       plugins={[Autoplay()]}
     >
-      <CarouselContent className="sm:-ml-2">
+      <CarouselContent className="sm:-ml-0">
         {images.map((img, i) => (
           <CarouselItem
             key={i}
-            className="basis-full sm:pl-2 md:basis-1/2 lg:basis-1/3"
+            className="basis-full sm:pl-0 md:basis-1/2 lg:basis-1/3"
           >
             <Image
               src={img}
@@ -50,7 +50,7 @@ export function HomeCarousel() {
               width={400}
               height={400}
               alt="Placeholder about"
-              className="w-full object-cover sm:aspect-square"
+              className="w-full object-cover"
             />
           </CarouselItem>
         ))}

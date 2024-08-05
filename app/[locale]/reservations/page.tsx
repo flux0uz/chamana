@@ -12,7 +12,7 @@ export async function generateMetadata({
     title: t("reservation.title"),
     description: t("reservation.description"),
     openGraph: {
-      title: `${t("reservation.title")} | ${siteConfig.name}`,
+      title: `${siteConfig.name} | ${t("reservation.title")}`,
       description: t("reservation.description"),
       type: "website",
       locale,
@@ -21,7 +21,7 @@ export async function generateMetadata({
       ...siteConfig.openGraphImage,
     },
     twitter: {
-      title: `${t("reservation.title")} | ${siteConfig.name}`,
+      title: `${siteConfig.name} | ${t("reservation.title")}`,
       description: t("reservation.description"),
       card: "summary_large_image",
       ...siteConfig.openGraphImage,
@@ -44,9 +44,7 @@ export default async function ReservationsPage() {
   return (
     <div className="min-h-dvh flex-1 bg-secondary">
       <section className="pb-20 pt-10 md:pt-20 lg:pt-24">
-        <h1 className="text-center text-4xl sm:text-5xl md:text-6xl">
-          {t("title")}
-        </h1>
+        <h1 className="text-center text-4xl md:text-6xl">{t("title")}</h1>
       </section>
 
       <section className="container">
@@ -58,7 +56,7 @@ export default async function ReservationsPage() {
       <section className="py-20 md:py-32 lg:py-40">
         <div className="container mx-auto space-y-4 text-center">
           <div className="space-y-2">
-            <h2 className="text-3xl font-bold sm:text-4xl md:text-5xl">
+            <h2 className="text-3xl font-bold md:text-5xl">
               {t("groups.title")}
             </h2>
             <p className="whitespace-pre-line text-pretty text-xl">
@@ -71,7 +69,7 @@ export default async function ReservationsPage() {
               href={`tel:${siteConfig.phoneNumber}`}
               target="_blank"
               rel="noreferrer"
-              className="w-fit cursor-pointer border-b-2 border-primary text-center font-medium uppercase md:text-xl"
+              className="w-fit cursor-pointer border-b-2 border-primary text-center text-xl font-medium uppercase"
             >
               {t("groups.callCta")}
             </a>
@@ -79,7 +77,7 @@ export default async function ReservationsPage() {
               href={`tel:${siteConfig.email}`}
               target="_blank"
               rel="noreferrer"
-              className="w-fit cursor-pointer border-b-2 border-primary text-center font-medium uppercase md:text-xl"
+              className="w-fit cursor-pointer border-b-2 border-primary text-center text-xl font-medium uppercase"
             >
               {t("groups.emailCta")}
             </a>

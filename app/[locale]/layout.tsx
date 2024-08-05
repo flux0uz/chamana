@@ -25,8 +25,8 @@ export async function generateMetadata({
 
   return {
     title: {
-      default: t("title"),
-      template: `%s | ${siteConfig.name}`,
+      absolute: `${siteConfig.name} | ${t("title")}`,
+      template: `${siteConfig.name} | %s`,
     },
     metadataBase: new URL(siteConfig.url),
     description: t("description"),
@@ -47,14 +47,14 @@ export async function generateMetadata({
       type: "website",
       locale: locale,
       url: `/${locale}`,
-      title: `${t("title")} | ${siteConfig.name}`,
+      title: `${siteConfig.name} | ${t("title")}`,
       description: t("description"),
       siteName: siteConfig.name,
       ...siteConfig.openGraphImage,
     },
     twitter: {
       card: "summary_large_image",
-      title: `${t("title")} | ${siteConfig.name}`,
+      title: `${siteConfig.name} | ${t("title")}`,
       description: t("description"),
       ...siteConfig.openGraphImage,
     },
@@ -128,12 +128,10 @@ export default async function LocaleLayout({
 
       <body>
         <NextIntlClientProvider messages={messages}>
-          <div className="relative flex min-h-screen flex-col">
+          <div className="relative min-h-screen">
             <Header />
             <MobileHeader />
-            <main className="flex-1">
-              <div className="border-b">{children}</div>
-            </main>
+            <main>{children}</main>
             <Footer />
           </div>
         </NextIntlClientProvider>

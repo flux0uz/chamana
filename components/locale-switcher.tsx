@@ -19,17 +19,20 @@ export function LocaleSwitcher({ className }: ILocaleSwitcherProps) {
       {locales.map((loc, i) => (
         <React.Fragment key={loc}>
           <Link
-            className={cn("text-lg", className, {
-              "border-b-2 border-primary font-semibold text-primary":
-                loc === locale,
-              "font-medium text-muted hover:text-primary": loc !== locale,
-            })}
+            className={cn(
+              "border-b-2 text-xl font-semibold uppercase text-white transition-colors hover:border-primary",
+              className,
+              {
+                "border-primary": loc === locale,
+                "border-transparent": loc !== locale,
+              },
+            )}
             href={pathname}
             locale={loc}
           >
             {loc === "en" ? "English" : "Español"}
           </Link>
-          <span>{i < locales.length - 1 && "|"}</span>
+          <span className="text-white">{i < locales.length - 1 && "|"}</span>
         </React.Fragment>
       ))}
     </div>
