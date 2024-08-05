@@ -55,7 +55,7 @@ export default async function Page() {
         </h1>
       </section>
 
-      <section className="bg-secondary pb-20 pt-10 md:pb-32 md:pt-20 lg:pb-40 lg:pt-24">
+      <section className="bg-secondary pb-20 pt-20 md:pb-32 lg:pb-40 lg:pt-24">
         <div className="container max-w-3xl text-center">
           <div className="flex w-full flex-col items-center justify-center gap-8 space-y-2">
             <div>

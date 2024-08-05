@@ -95,7 +95,7 @@ export default async function Home() {
             <p className="whitespace-pre-wrap text-balance text-xl">
               {t("menu.text")}
             </p>
-            <div className="flex items-center gap-6">
+            <div className="flex items-center justify-center gap-6 sm:justify-normal">
               <Button variant="link" size="none" asChild>
                 <a
                   href={`/menus/chamana-carta-${locale}.pdf`}

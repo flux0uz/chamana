@@ -43,7 +43,7 @@ export default async function ReservationsPage() {
 
   return (
     <div className="min-h-dvh flex-1 bg-secondary">
-      <section className="pb-20 pt-10 md:pt-20 lg:pt-24">
+      <section className="pb-20 pt-20 md:pt-20 lg:pt-24">
         <h1 className="text-center text-4xl md:text-6xl">{t("title")}</h1>
       </section>
 
