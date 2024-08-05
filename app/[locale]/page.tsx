@@ -31,7 +31,7 @@ export default async function Home() {
             zIndex: 20,
           }}
         />
-        <div className="absolute inset-0 z-20 bg-black/60" />
+        <div className="absolute inset-0 z-20 bg-black/50" />
         <div className="absolute inset-0 z-20 mx-auto flex max-w-4xl items-center justify-center px-6">
           <div className="flex flex-col items-center space-y-6 text-white">
             <Image
