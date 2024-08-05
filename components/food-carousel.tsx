@@ -28,21 +28,63 @@ import clienteImg from "@/public/images/comida/chamana-cliente-1.png";
 import cliente2Img from "@/public/images/comida/chamana-cliente-2.png";
 
 export function FoodCarousel() {
-  const images = [
-    entranaImg,
-    tablaCarneImg,
-    chamanaCocktailImg,
-    gambasImg,
-    clubMateImg,
-    empanadasImg,
-    clienteImg,
-    caviarImg,
-    lomitoImg,
-    pachamamaCocktailImg,
-    cliente2Img,
-    ajiesImg,
-    choripanImg,
-    curanderaCocktailImg,
+  const assets = [
+    {
+      src: entranaImg,
+      alt: "Entraña ANGUS - Chamana Ibiza",
+    },
+    {
+      src: tablaCarneImg,
+      alt: "Tabla de carne - Chamana Ibiza",
+    },
+    {
+      src: chamanaCocktailImg,
+      alt: "Cocktail Chamana - Chamana Ibiza",
+    },
+    {
+      src: gambasImg,
+      alt: "Gambas al ajillo - Chamana Ibiza",
+    },
+    {
+      src: clubMateImg,
+      alt: "Club Mate - Chamana Ibiza",
+    },
+    {
+      src: empanadasImg,
+      alt: "Empanadas - Chamana Ibiza",
+    },
+    {
+      src: clienteImg,
+      alt: "Cliente - Chamana Ibiza",
+    },
+    {
+      src: caviarImg,
+      alt: "Caviar de berenjenas - Chamana Ibiza",
+    },
+    {
+      src: lomitoImg,
+      alt: "Lomito desmenuzado - Chamana Ibiza",
+    },
+    {
+      src: pachamamaCocktailImg,
+      alt: "Cocktail Pachamama - Chamana Ibiza",
+    },
+    {
+      src: cliente2Img,
+      alt: "Cliente Chamana Chamana - Ibiza",
+    },
+    {
+      src: ajiesImg,
+      alt: "Marina de ajíes Chamana - Ibiza",
+    },
+    {
+      src: choripanImg,
+      alt: "Choripán Argentino Chamana - Ibiza",
+    },
+    {
+      src: curanderaCocktailImg,
+      alt: "Cocktail Curandera Chamana - Ibiza",
+    },
   ];
 
   return (
@@ -55,18 +97,20 @@ export function FoodCarousel() {
       plugins={[Autoplay()]}
     >
       <CarouselContent className="sm:-ml-0">
-        {images.map((img, i) => (
+        {assets.map((asset, i) => (
           <CarouselItem
             key={i}
             className="basis-full sm:pl-0 md:basis-1/2 lg:basis-1/3"
           >
             <Image
-              src={img}
+              src={asset.src}
               quality={100}
               width={400}
               height={400}
-              alt="Placeholder about"
+              alt={asset.alt}
               className="w-full object-cover"
+              sizes="min-width(768px) 50vw, min-width(1024px) 33vw, 100vw"
+              placeholder="blur"
             />
           </CarouselItem>
         ))}

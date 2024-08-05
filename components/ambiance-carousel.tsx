@@ -20,13 +20,31 @@ import boticaImg from "@/public/images/ambiente/chamana-botica.png";
 import clienteImg3 from "@/public/images/ambiente/chamana-cliente-3.png";
 
 export function AmbianceCarousel() {
-  const images = [
-    boticaImg,
-    terrazaImg,
-    clienteImg3,
-    clientesImg,
-    ambienteImg,
-    clienteBoticaImg3,
+  const assets = [
+    {
+      src: boticaImg,
+      alt: "Botica - Chamana Ibiza",
+    },
+    {
+      src: terrazaImg,
+      alt: "Terraza - Chamana Ibiza",
+    },
+    {
+      src: clienteImg3,
+      alt: "Cliente - Chamana Ibiza",
+    },
+    {
+      src: clientesImg,
+      alt: "Clientes - Chamana Ibiza",
+    },
+    {
+      src: ambienteImg,
+      alt: "Ambiente - Chamana Ibiza",
+    },
+    {
+      src: clienteBoticaImg3,
+      alt: "Cliente - Chamana Ibiza",
+    },
   ];
 
   return (
@@ -39,18 +57,20 @@ export function AmbianceCarousel() {
       plugins={[Autoplay()]}
     >
       <CarouselContent className="sm:-ml-0">
-        {images.map((img, i) => (
+        {assets.map((asset, i) => (
           <CarouselItem
             key={i}
             className="basis-full sm:pl-0 md:basis-1/2 lg:basis-1/3"
           >
             <Image
-              src={img}
+              src={asset.src}
               quality={100}
               width={400}
               height={400}
-              alt="Placeholder about"
+              alt={asset.alt}
               className="w-full object-cover"
+              sizes="min-width(768px) 50vw, min-width(1024px) 33vw, 100vw"
+              placeholder="blur"
             />
           </CarouselItem>
         ))}

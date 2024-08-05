@@ -1,6 +1,6 @@
 import { siteConfig } from "@/config/site";
 import { Metadata } from "next";
-import { getLocale, getTranslations } from "next-intl/server";
+import { getTranslations } from "next-intl/server";
 import { TableoIframe } from "@/components/layout/tableo-iframe";
 
 export async function generateMetadata({
@@ -39,7 +39,6 @@ export async function generateMetadata({
 
 export default async function ReservationsPage() {
   const t = await getTranslations("Reservations");
-  const locale = await getLocale();
 
   return (
     <div className="min-h-dvh flex-1 bg-secondary">
