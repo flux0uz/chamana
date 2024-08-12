@@ -17,6 +17,7 @@ import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
 import { MobileHeader } from "@/components/layout/mobile-header";
 import { NavigationEvents } from "@/components/layout/navigation-events";
+import { CookieBanner } from "@/components/layout/cookie-banner";
 
 export async function generateMetadata({
   params: { locale },
@@ -88,23 +89,23 @@ export default async function LocaleLayout({
     image: absoluteUrl("/images/og.png"),
     address: {
       "@type": "PostalAddress",
-      streetAddress: "Carrer Josep Lluis Sert 4",
+      streetAddress: "Carrer Josep Lluís Sert 4",
       addressLocality: "Ibiza",
       postalCode: "07800",
       addressCountry: "ES",
     },
-    openingHours: "We-Su 18:00-02:00",
+    openingHours: "We-Su 19:00-02:00",
     telephone: siteConfig.phoneNumber,
     email: siteConfig.email,
     hasMenu: absoluteUrl(`/menus/chamana-carta-${locale}.pdf`),
     acceptsReservations: absoluteUrl(`/${locale}`),
-    servesCuisine: ["Argentinian", "Tapas", "Cocktails"],
+    servesCuisine: ["Argentinian", "Tapas", "Meat", "Cocktails"],
     priceRange: "€€",
     aggregateRating: {
       "@type": "AggregateRating",
-      reviewCount: "131",
-      ratingCount: "131",
-      ratingValue: "4.8",
+      reviewCount: "142",
+      ratingCount: "142",
+      ratingValue: "4.7",
       bestRating: "5",
       worstRating: "1",
     },
@@ -125,6 +126,29 @@ export default async function LocaleLayout({
       />
       <GoogleTagManager gtmId="GTM-K6SC72WQ" />
       <SpeedInsights sampleRate={0.7} />
+      <Script
+        id="google-analytics"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+
+                gtag('consent', 'default', {
+                    'ad_storage': 'denied',
+                    'ad_user_data': 'denied',
+                    'ad_personalization': 'denied',
+                    'analytics_storage': 'denied',
+                    'wait_for_update': 10000,
+                });
+                
+                gtag('config', 'G-CLQQ585KGP', {
+                    page_path: window.location.pathname,
+                });
+                `,
+        }}
+      />
 
       <body>
         <NextIntlClientProvider messages={messages}>
@@ -134,6 +158,10 @@ export default async function LocaleLayout({
             <main>{children}</main>
             <Footer />
           </div>
+
+          <React.Suspense fallback={null}>
+            <CookieBanner />
+          </React.Suspense>
         </NextIntlClientProvider>
 
         <React.Suspense fallback={null}>

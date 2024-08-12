@@ -43,7 +43,11 @@ export default async function Home() {
             <h1 className="text-center text-4xl font-black md:text-5xl">
               {t("tagline")}
             </h1>
-            <Button asChild className="text-2xl uppercase" size="lg">
+            <Button
+              asChild
+              className="text-2xl font-semibold uppercase"
+              size="lg"
+            >
               <Link href="/reservations">{t("book.cta")}</Link>
             </Button>
           </div>
@@ -142,7 +146,12 @@ export default async function Home() {
             <p className="whitespace-pre-wrap text-balance text-xl">
               {t("book.text")}
             </p>
-            <Button asChild className="text-2xl font-bold uppercase" size="lg">
+            <Button
+              variant="accent"
+              asChild
+              className="text-2xl font-semibold uppercase"
+              size="lg"
+            >
               <Link href="/reservations">{t("book.cta")}</Link>
             </Button>
           </div>

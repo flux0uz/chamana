@@ -16,6 +16,14 @@
     "text": "Se ha producido un error",
     "cta": "Volver a intentar"
   },
+  "CookieBanner": {
+    "title": "Chamana respeta tu privacidad",
+    "description": "Utilizamos cookies para ofrecerte la mejor experiencia de navegación.",
+    "cookiePolicy": "Para obtener más información, consulta nuestra <a>Política de cookies</a>",
+    "close": "Cerrar",
+    "accept": "Aceptar",
+    "continueNoAccept": "Continuar sin aceptar"
+  },
   "Header": {
     "menu": {
       "home": "Inicio",

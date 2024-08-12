@@ -56,13 +56,8 @@ export function Header() {
         <HeaderLinks />
         <div className="flex flex-1 items-center justify-between space-x-8 md:justify-end">
           <LocaleSwitcher />
-          <Button asChild className="text-lg font-semibold uppercase" size="lg">
-            <Link
-              href="/reservations"
-              className="w-fit cursor-pointer border-b-2 border-primary text-center font-medium uppercase md:text-xl"
-            >
-              {t("menu.book")}
-            </Link>
+          <Button asChild className="text-xl font-semibold uppercase" size="lg">
+            <Link href="/reservations">{t("menu.book")}</Link>
           </Button>
         </div>
       </div>

@@ -5,3 +5,12 @@ export const gtmPageView = (props: { [key: string]: any }) => {
     ...props,
   });
 };
+
+export const allConsentGranted = () => {
+  return window.gtag("consent", "update", {
+    ad_storage: "granted",
+    ad_user_data: "granted",
+    ad_personalization: "granted",
+    analytics_storage: "granted",
+  });
+};
