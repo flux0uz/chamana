@@ -147,7 +147,6 @@ export default async function Home() {
               {t("book.text")}
             </p>
             <Button
-              variant="accent"
               asChild
               className="text-2xl font-semibold uppercase"
               size="lg"
