@@ -26,7 +26,7 @@ export function Header() {
       }
       setLastScrollY(window.scrollY);
 
-      setIsTransparent(window.scrollY === 0);
+      setIsTransparent(window.scrollY <= 0);
     }
   };
 
