@@ -111,20 +111,11 @@ export default async function Home() {
               </Button>
               <Button variant="link" size="none" asChild>
                 <a
-                  href={`/menus/chamana-coktails-${locale}.pdf`}
+                  href={`/menus/chamana-cocktails-${locale}.pdf`}
                   target="_blank"
                   rel="noreferrer"
                 >
                   {t("menu.ctaCocktails")}
-                </a>
-              </Button>
-              <Button variant="link" size="none" asChild>
-                <a
-                  href={`/menus/chamana-vinos-${locale}.pdf`}
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  {t("menu.ctaVinos")}
                 </a>
               </Button>
             </div>
