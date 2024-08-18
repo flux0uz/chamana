@@ -35,8 +35,7 @@
       "menus": {
         "title": "Cartas",
         "menu": "Tapas",
-        "cocktails": "Bebidas",
-        "wine": "Vinos"
+        "cocktails": "Bebidas"
       }
     }
   },
@@ -64,9 +63,8 @@
     "menu": {
       "title": "Un viaje culinario",
       "text": "Disfruta de nuestra variada selección de tapas argentinas, elaboradas con los mejores ingredientes.\nDesde carnes suculentas hasta productos orgánicos frescos, nuestros platos están diseñados para deleitar tus sentidos.\nComplementa tu comida con nuestros cócteles herbales exclusivos, meticulosamente preparados para ofrecer una experiencia sensorial única.",
-      "ctaMenu": "Comida",
-      "ctaVinos": "Vinos",
-      "ctaCocktails": "Cocteles"
+      "ctaMenu": "Tapas",
+      "ctaCocktails": "Bebidas"
     },
     "book": {
       "title": "Reserva una mesa",

@@ -2,6 +2,9 @@ import { siteConfig } from "@/config/site";
 import { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 import { TableoIframe } from "@/components/layout/tableo-iframe";
+import Image from "next/image";
+
+import reservasBanner from "@/public/images/reservas-banner.png";
 
 export async function generateMetadata({
   params: { locale },
@@ -42,11 +45,29 @@ export default async function ReservationsPage() {
 
   return (
     <div className="min-h-dvh flex-1 bg-secondary">
-      <section className="pb-20 pt-20 md:pt-20 lg:pt-24">
-        <h1 className="text-center text-4xl md:text-6xl">{t("title")}</h1>
+      <section className="relative flex min-h-60 items-center justify-center pb-20 pt-20 sm:min-h-96 md:pt-20 lg:pt-24">
+        <Image
+          alt="Chamana tapas Ibiza"
+          src={reservasBanner}
+          placeholder="blur"
+          quality={100}
+          sizes="100vw"
+          priority
+          fill
+          style={{
+            objectFit: "cover",
+            zIndex: 20,
+          }}
+        />
+        <div className="absolute inset-0 z-20 bg-black/50" />
+        <div className="relative z-20 flex items-center justify-center">
+          <h1 className="text-center text-4xl text-white md:text-6xl">
+            {t("title")}
+          </h1>
+        </div>
       </section>
 
-      <section className="container">
+      <section className="container pt-20 lg:pt-24">
         <div className="mx-auto max-w-4xl">
           <TableoIframe />
         </div>

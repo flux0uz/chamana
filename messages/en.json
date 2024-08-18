@@ -64,9 +64,8 @@
     "menu": {
       "title": "A culinary journey",
       "text": "Indulge in our diverse selection of Argentinian tapas, crafted with the finest ingredients.\nFrom succulent meats to fresh organic produce, our dishes are designed to tantalize your taste buds.\nComplement your meal with our signature herbal cocktails, meticulously prepared to offer a unique sensory experience.",
-      "ctaMenu": "Food",
-      "ctaVinos": "Wines",
-      "ctaCocktails": "Cocktails"
+      "ctaMenu": "Tapas",
+      "ctaCocktails": "Drinks"
     },
     "book": {
       "title": "Book a table",
