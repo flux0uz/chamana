@@ -1,14 +1,17 @@
 "use client";
 
 import * as React from "react";
+import Image from "next/image";
 import { useTranslations } from "next-intl";
 
 import { Link } from "@/navigation";
+import { cn } from "@/lib/utils";
 
 import { HeaderLinks } from "@/components/layout/header-links";
 import { Button } from "@/components/ui/button";
 import { LocaleSwitcher } from "../locale-switcher";
-import { cn } from "@/lib/utils";
+
+import logoWhite from "@/public/images/logo-chamana-blanco.png";
 
 export function Header() {
   const t = useTranslations("Header");
@@ -54,7 +57,16 @@ export function Header() {
     >
       <div className="container flex h-20 max-w-screen-2xl items-center">
         <HeaderLinks />
-        <div className="flex flex-1 items-center justify-between space-x-8 md:justify-end">
+        <div className="flex items-center justify-center">
+          <Image
+            src={logoWhite}
+            alt="logo chamana"
+            width={70}
+            height={70}
+            className="flex justify-center"
+          />
+        </div>
+        <div className="flex flex-1 items-center justify-end space-x-4">
           <LocaleSwitcher />
           <Button asChild className="text-xl font-semibold uppercase" size="lg">
             <Link href="/reservations">{t("menu.book")}</Link>

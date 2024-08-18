@@ -19,6 +19,7 @@ import { LocaleSwitcher } from "@/components/locale-switcher";
 import { MenusAccordion } from "@/components/menus-accordion";
 
 import logo from "@/public/images/logo-chamana.png";
+import logoWhite from "@/public/images/logo-chamana-blanco.png";
 
 export function MobileHeader() {
   const t = useTranslations("Header");
@@ -64,7 +65,14 @@ export function MobileHeader() {
         },
       )}
     >
-      <div className="flex h-20 w-full items-center justify-end px-4">
+      <div className="flex h-20 w-full items-center justify-between px-4">
+        <Image
+          src={logoWhite}
+          alt="logo chamana"
+          width={60}
+          height={60}
+          className="flex justify-center"
+        />
         <Sheet open={open} onOpenChange={setOpen}>
           <SheetTrigger asChild>
             <Button

@@ -14,7 +14,7 @@ export function HeaderLinks() {
   const pathname = usePathname();
 
   return (
-    <nav className="flex items-center gap-4 lg:gap-8">
+    <nav className="flex flex-1 items-center gap-4 lg:gap-8">
       {siteConfig.navLinks.map((link) => (
         <Link
           key={link.href}
