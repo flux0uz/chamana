@@ -98,7 +98,7 @@ export default async function LocaleLayout({
     telephone: siteConfig.phoneNumber,
     email: siteConfig.email,
     hasMenu: absoluteUrl(`/menus/chamana-carta-${locale}.pdf`),
-    acceptsReservations: absoluteUrl(`/${locale}`),
+    acceptsReservations: absoluteUrl(`/${locale}/reservations`),
     servesCuisine: ["Argentinian", "Tapas", "Meat", "Cocktails"],
     priceRange: "€€",
     aggregateRating: {
